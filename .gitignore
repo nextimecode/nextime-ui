@@ -1,5 +1,5 @@
-/node_modules/
-/public/build/
-dist
+*.log
 .DS_Store
-build-storybook.log
+node_modules
+.cache
+dist
