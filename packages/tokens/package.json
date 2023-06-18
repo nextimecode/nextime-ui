@@ -11,7 +11,7 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pedro Duarte",
   "license": "MIT",
   "devDependencies": {
     "@nextime-ui/ts-config": "*",
