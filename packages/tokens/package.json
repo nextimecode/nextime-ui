@@ -16,7 +16,7 @@
   "devDependencies": {
     "@nextime-ui/ts-config": "*",
     "@nextime-ui/eslint-config": "*",
-    "tsup": "^6.6.3",
-    "typescript": "^4.9.5"
+    "tsup": "^7.0.0",
+    "typescript": "^5.1.3"
   }
 }
