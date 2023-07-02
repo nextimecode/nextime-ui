@@ -4,6 +4,7 @@
     "dev": {
       "cache": false
     },
+    "clean": {},
     "build": {
       "outputs": [
         "dist/**",

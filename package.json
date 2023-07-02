@@ -1,20 +1,22 @@
 {
   "private": true,
+  "packageManager": "pnpm@8.4.0",
   "workspaces": [
-    "packages/*"
+    "libs/*"
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
+    "clean": "turbo run clean && rm -rf node_modules pnpm-lock.yaml",
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=!docs && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
-    "turbo": "^1.8.3"
+    "@changesets/cli": "^2.26.2",
+    "turbo": "^1.10.7"
   },
   "dependencies": {
-    "@storybook/react-vite": "^7.0.22"
+    "@storybook/react-vite": "^7.0.24"
   }
 }
