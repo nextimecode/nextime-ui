@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
-    "clean": "rm -rf node_modules .turbo storybook-static",
+    "clean": "rm -rf .turbo dist node_modules",
+    "update": "pnpm update --latest",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
