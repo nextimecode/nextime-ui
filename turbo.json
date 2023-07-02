@@ -5,6 +5,7 @@
       "cache": false
     },
     "clean": {},
+    "update": {},
     "build": {
       "outputs": [
         "dist/**",
