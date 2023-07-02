@@ -1,6 +1,8 @@
 {
   "name": "@nextime-ui/ts-config",
-  "version": "2.0.0",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Pedro Duarte - NeXTIME",
   "license": "MIT",
-  "private": true
+  "private": false
 }

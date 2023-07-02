@@ -1,34 +1,25 @@
 {
   "name": "@nextime-ui/react",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "clean": "rm -rf node_modules pnpm-lock.yaml",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
-    "clean": "rm -rf .turbo dist node_modules",
-    "update": "pnpm update --latest",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pedro Duarte - NeXTIME",
   "license": "MIT",
+  "private": false,
   "devDependencies": {
-    "@nextime-ui/eslint-config": "^2.0.0",
-    "@nextime-ui/tokens": "^2.1.0",
-    "@nextime-ui/ts-config": "^2.0.0",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "react": "^18.2.0",
+    "@nextime-ui/eslint-config": "*",
+    "@nextime-ui/tokens": "*",
+    "@nextime-ui/ts-config": "*",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "@radix-ui/react-avatar": "^1.0.3",
-    "@radix-ui/react-checkbox": "^1.0.4",
-    "@stitches/react": "^1.2.8",
-    "phosphor-react": "^1.4.1"
   }
 }
