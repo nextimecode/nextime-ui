@@ -5,7 +5,7 @@ interface ButtonProps {
   children: ReactNode;
 }
 
-export function Button({ children, ...props }: ButtonProps) {
+export function NextButton({ children, ...props }: ButtonProps) {
   return (
     <ChakraButton colorScheme="blue" {...props}>
       {children}
