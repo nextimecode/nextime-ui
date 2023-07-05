@@ -1,7 +1,7 @@
 # @nextime-ui/ts-config
 
-## 2.2.0
+## 2.3.0
 
-### Major Changes
+### Minor Changes
 
-- Update storybook 7
+- Change name nextbutton to button
