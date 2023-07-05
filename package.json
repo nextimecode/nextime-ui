@@ -1,4 +1,8 @@
 {
+  "name": "nextime-ui",
+  "version": "2.2.0",
+  "repository": "https://github.com/nextimecode/nextime-ui",
+  "packageManager": "pnpm@8.4.0",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -6,15 +10,17 @@
   "scripts": {
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
+    "clean": "turbo run clean --parallel && rm -rf node_modules pnpm-lock.yaml",
+    "lint": "turbo run lint",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=!docs && changeset publish"
   },
+  "author": "Pedro Duarte - NeXTIME",
+  "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
-    "turbo": "^1.8.3"
-  },
-  "dependencies": {
-    "@storybook/react-vite": "^7.0.22"
+    "@changesets/cli": "^2.26.2",
+    "@swc/core": "^1.3.67",
+    "turbo": "^1.10.7"
   }
 }

@@ -1,7 +1,7 @@
 # @nextime-ui/eslint-config
 
-## 2.0.0
+## 2.3.0
 
-### Major Changes
+### Minor Changes
 
-- Add display name to all components
+- Change name nextbutton to button

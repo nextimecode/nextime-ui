@@ -1,73 +1,39 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from '@nextime-ui/react'
-import { ArrowRight } from 'phosphor-react'
+import { Button } from '@nextime-ui/react';
 
+// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
-  title: 'Form/Button',
+  title: 'Example/Button',
   component: Button,
-  args: {
-    children: 'Send',
-    variant: 'primary',
-    size: 'md',
-    disabled: false,
-  },
+  tags: ['autodocs'],
   argTypes: {
-    variant: {
-      options: ['primary', 'secondary', 'tertiary'],
-      control: {
-        type: 'inline-radio',
-      },
-    },
-    size: {
-      options: ['sm', 'md'],
-      control: {
-        type: 'inline-radio',
-      },
-    },
-    disabled: {
-      control: {
-        type: 'boolean',
-      },
-    },
-    onClick: { action: 'clicked' },
+    backgroundColor: { control: 'color' },
   },
-} as Meta<ButtonProps>
+};
 
-export const Primary: StoryObj<ButtonProps> = {}
-
-export const Secondary: StoryObj<ButtonProps> = {
+// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const Primary = {
   args: {
-    variant: 'secondary',
-    children: 'Create new',
+    primary: true,
+    label: 'Button',
   },
-}
+};
 
-export const Tertiary: StoryObj<ButtonProps> = {
+export const Secondary = {
   args: {
-    variant: 'tertiary',
-    children: 'Cancel',
+    label: 'Button',
   },
-}
+};
 
-export const Small: StoryObj<ButtonProps> = {
+export const Large = {
   args: {
-    size: 'sm',
+    size: 'large',
+    label: 'Button',
   },
-}
+};
 
-export const WithIcon: StoryObj<ButtonProps> = {
+export const Small = {
   args: {
-    children: (
-      <>
-        Próximo passo
-        <ArrowRight weight="bold" />
-      </>
-    ),
+    size: 'small',
+    label: 'Button',
   },
-}
-
-export const Disabled: StoryObj<ButtonProps> = {
-  args: {
-    disabled: true,
-  },
-}
+};
