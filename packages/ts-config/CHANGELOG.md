@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 2.3.5
+
+### Patch Changes
+
+- 16a91a5: Add readme in react
+
 ## 2.3.4
 
 ### Patch Changes
