@@ -1,5 +1,12 @@
 # @nextime-ui/react
 
+## 2.3.5
+
+### Patch Changes
+
+- Add center, circle and square
+- 16a91a5: Add readme in react
+
 ## 2.3.4
 
 ### Patch Changes
