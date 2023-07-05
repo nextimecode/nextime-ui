@@ -1,1 +1,1 @@
-export * from './components/NextButton';
+export * from './components/Button';

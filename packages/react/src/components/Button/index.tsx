@@ -1,11 +1,11 @@
 import { Button as ChakraButton } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
-interface NextButtonProps {
+interface ButtonProps {
   children: ReactNode;
 }
 
-export function NextButton({ children, ...props }: NextButtonProps) {
+export function Button({ children, ...props }: ButtonProps) {
   return (
     <ChakraButton colorScheme="blue" {...props}>
       {children}
