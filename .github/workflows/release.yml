@@ -22,7 +22,8 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
 
-      - run: pnpm install
+      - run: npm install -g pnpm
+      - run: pnpm install --frozen-lockfile
 
       - name: Publish to PNPM
         id: changesets
