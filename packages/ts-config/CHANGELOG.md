@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 2.3.4
+
+### Patch Changes
+
+- Add readme and remoce use client in component
+
 ## 2.3.3
 
 ### Patch Changes
