@@ -5,6 +5,7 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "@chakra-ui/storybook-addon"
   ],
   framework: {
     name: "@storybook/react-vite",
@@ -12,6 +13,9 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+  },
+  features: {
+    emotionAlias: false,
   },
 };
 export default config;
