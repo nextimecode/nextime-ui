@@ -1,18 +1,21 @@
 {
-  "name": "docs",
+  "name": "@nextime-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "storybook build",
-    "clean": "rm -rf .turbo node_modules pnpm-lock.yaml",
+    "clean": "rm -rf .turbo node_modules storybook-static pnpm-lock.yaml",
     "dev": "storybook dev -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@nextime-ui/react": "*",
+    "@nextime-ui/tokens": "*",
+    "@nextime-ui/eslint-config": "*",
     "@storybook/addon-essentials": "^7.0.25",
     "@storybook/addon-interactions": "^7.0.25",
     "@storybook/addon-links": "^7.0.25",
