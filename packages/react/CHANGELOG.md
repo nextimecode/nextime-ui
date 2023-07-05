@@ -1,5 +1,11 @@
 # @nextime-ui/react
 
+## 2.3.3
+
+### Patch Changes
+
+- Add box
+
 ## 2.3.2
 
 ### Patch Changes

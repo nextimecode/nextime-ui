@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/eslint-config",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "license": "MIT",
   "private": false,
   "description": "ESLint configuration used by NeXTIME.",
