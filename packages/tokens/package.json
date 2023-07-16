@@ -9,7 +9,8 @@
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "clean": "rm -rf node_modules pnpm-lock.yaml",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "lint": "eslint src/**/*.ts* --fix"
+    "lint": "eslint src/**/*.ts* --fix",
+    "updateAll": "pnpm update --latest"
   },
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",

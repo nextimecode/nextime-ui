@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "storybook dev -p 6006",
     "build": "storybook build",
     "clean": "rm -rf .turbo node_modules storybook-static pnpm-lock.yaml",
-    "dev": "storybook dev -p 6006",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "updateAll": "pnpm update --latest"
   },
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",

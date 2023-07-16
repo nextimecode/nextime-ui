@@ -9,7 +9,8 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf .turbo dist node_modules pnpm-lock.yaml",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
-    "lint": "eslint src/**/*.ts* --fix"
+    "lint": "eslint src/**/*.ts* --fix",
+    "updateAll": "pnpm update --latest"
   },
   "keywords": [
     "React",

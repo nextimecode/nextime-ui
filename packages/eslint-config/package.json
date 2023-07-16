@@ -6,7 +6,8 @@
   "description": "ESLint configuration used by NeXTIME.",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf node_modules"
+    "clean": "rm -rf node_modules",
+    "updateAll": "pnpm update --latest"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",

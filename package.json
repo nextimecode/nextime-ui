@@ -14,7 +14,8 @@
     "lint": "turbo run lint",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=!docs && changeset publish"
+    "release": "turbo run build --filter=!docs && changeset publish",
+    "updateAll": "turbo run updateAll && pnpm update --latest"
   },
   "author": "Pedro Duarte - NeXTIME",
   "license": "MIT",
