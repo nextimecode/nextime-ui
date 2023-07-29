@@ -15,9 +15,9 @@
   "license": "MIT",
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.0.1",
-    "@nextime-ui/eslint-config": "^2.3.5",
-    "@nextime-ui/react": "^2.3.5",
-    "@nextime-ui/tokens": "^2.3.5",
+    "@nextime-ui/eslint-config": "^2.4.0",
+    "@nextime-ui/react": "^2.4.0",
+    "@nextime-ui/tokens": "^2.4.0",
     "@storybook/addon-essentials": "^7.1.1",
     "@storybook/addon-interactions": "^7.1.1",
     "@storybook/addon-links": "^7.1.1",

@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 2.4.0
+
+### Minor Changes
+
+- Change eslint for nextjs
+
 ## 2.3.5
 
 ### Patch Changes
