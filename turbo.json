@@ -19,6 +19,11 @@
     "lint": {
       "outputs": []
     },
+    "typecheck": {
+      "outputs": [
+        "tsconfig.tsbuildinfo"
+      ]
+    },
     "updateAll": {}
   }
 }
