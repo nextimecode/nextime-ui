@@ -24,13 +24,13 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(@chakra-ui/react@2.8.0)(@storybook/components@7.1.1)(@storybook/manager-api@7.1.1)(@storybook/preview-api@7.1.1)(@storybook/types@7.1.1)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/eslint-config':
-        specifier: ^2.4.0
+        specifier: workspace:^
         version: link:../eslint-config
       '@nextime-ui/react':
-        specifier: ^2.4.0
+        specifier: workspace:^
         version: link:../react
       '@nextime-ui/tokens':
-        specifier: ^2.4.0
+        specifier: workspace:^
         version: link:../tokens
       '@storybook/addon-essentials':
         specifier: ^7.1.1
