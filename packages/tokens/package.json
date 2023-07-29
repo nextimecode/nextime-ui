@@ -17,8 +17,8 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@nextime-ui/eslint-config": "*",
-    "@nextime-ui/ts-config": "*",
+    "@nextime-ui/eslint-config": "^2.3.5",
+    "@nextime-ui/ts-config": "^2.3.5",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
