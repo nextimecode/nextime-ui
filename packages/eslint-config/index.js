@@ -1,9 +1,9 @@
 module.exports = {
-  extends: ["next/core-web-vitals", '@rocketseat/eslint-config/react'],
+  extends: ["@rocketseat/eslint-config/next"],
   plugins: ["eslint-plugin-import-helpers"],
   rules: {
     "import-helpers/order-imports": [
-      error,
+      "error",
       {
         newlinesBetween: "always",
         groups: [
