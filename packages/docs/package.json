@@ -8,7 +8,6 @@
     "build": "storybook build",
     "clean": "rm -rf .turbo node_modules storybook-static pnpm-lock.yaml",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typecheck": "tsc --noEmit",
     "updateAll": "pnpm update --latest"
   },
   "keywords": [],
