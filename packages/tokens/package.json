@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/tokens",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -18,8 +18,8 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@nextime-ui/eslint-config": "^2.4.0",
-    "@nextime-ui/ts-config": "^2.4.0",
+    "@nextime-ui/eslint-config": "^2.4.1",
+    "@nextime-ui/ts-config": "^2.4.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }

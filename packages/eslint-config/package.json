@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/eslint-config",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "license": "MIT",
   "private": false,
   "description": "ESLint configuration used by NeXTIME.",
@@ -9,7 +9,7 @@
     "clean": "rm -rf node_modules",
     "updateAll": "pnpm update --latest"
   },
-  "devDependencies": {
+  "dependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
     "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.12",
