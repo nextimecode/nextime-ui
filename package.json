@@ -2,7 +2,7 @@
   "name": "nextime-ui",
   "version": "2.3.3",
   "repository": "https://github.com/nextimecode/nextime-ui",
-  "packageManager": "pnpm@8.4.0",
+  "packageManager": "pnpm@8.6.10",
   "private": true,
   "workspaces": [
     "packages/*"
