@@ -1,6 +1,7 @@
 {
   "workbench.colorCustomizations": {
     "statusBar.background": "#4882f8",
+    "activityBarBadge.background": "#4882f8",
   },
   "peacock.color": "#4882F8"
 }
