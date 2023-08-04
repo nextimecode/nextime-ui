@@ -7,37 +7,24 @@ on:
       - synchronize
 permissions: write-all
 jobs:
-  review:
+  release:
     runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: 18
+      PNPM_VERSION: 8
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - name: Setup pnpm and cache
+        uses: ./.github/actions/prepare
         with:
-          node-version: 18
+          node-version: ${{ env.NODE_VERSION }}
+          pnpm-version: ${{ env.PNPM_VERSION }}
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 8
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
         shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
 
       - name: AI Code Reviewer
         uses: nextimecode/ai-codereviewer@main

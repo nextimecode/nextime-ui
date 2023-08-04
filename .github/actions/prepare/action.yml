@@ -1,0 +1,54 @@
+name: 'Install'
+description: 'Install project dependencies'
+inputs:
+  node-version:
+    description: 'Node.js version'
+    required: true
+    default: '18'
+  pnpm-version:
+    description: 'pnpm version'
+    required: true
+    default: '8'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Restore node_modules cache
+      uses: actions/cache@v3
+      with:
+        path: '**/node_modules'
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('pnpm-lock.yaml', '.npmrc', 'pnpm-workspace.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+
+    - name: Install pnpm
+      run: npm install -g pnpm@${{ inputs.pnpm-version }}
+      shell: bash
+
+    - id: pnpm-cache
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_ENV
+
+    - name: Setup pnpm cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash
+
+    - name: Save node_modules cache
+      uses: actions/cache@v3
+      with:
+        path: '**/node_modules'
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('pnpm-lock.yaml', '.npmrc', 'pnpm-workspace.yaml') }}
