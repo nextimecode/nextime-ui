@@ -22,14 +22,14 @@ _Depois:_
 _Caso haja algum aprendizado interessante, compartilhe com a equipe_
 _EX.: Posts em blogs, bibliotecas utilizadas, add-ons utilizados, etc_
 
-## all all the content, in one go!
+## Todo o conteúdo, de uma vez só!
 copilot:all
 
-## a one-paragraph summary of the changes in the pull request.
+## Um resumo de um parágrafo das alterações na solicitação de pull.
 copilot:summary 
 
-## a detailed list of changes, including links to the relevant pieces of code.
+## Uma lista detalhada de alterações, incluindo links para as partes relevantes do código..
 copilot:walkthrough 
 
-## a poem about the changes in the pull request.
+## Um poema sobre as alterações na solicitação de pull.
 copilot:poem 
