@@ -3,6 +3,9 @@
   "version": "2.3.3",
   "repository": "https://github.com/nextimecode/nextime-ui",
   "packageManager": "pnpm@8.6.10",
+  "engines": {
+    "node": "18.x"
+  },
   "private": true,
   "workspaces": [
     "packages/*"
