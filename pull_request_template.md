@@ -4,16 +4,16 @@ _Descreva a feature ou o problema e adicione links para a tarefa_
 ## Descrição
 _Como essa mudança resolve o problema?_
 
-#### Tarefas
+### Tarefas
 - [ ] Utilize o checklist para melhorar a visualização das tarefas e indicar o andamento
 - [ ] Desenvolver testes automatizados
-- [ ] Documetar
+- [ ] Documentar
 
-## Dependencias
-_Descreva as dependencias deste PR, como: Reindexar a base de dados no ES ou Rodar migration_
+### Dependências
+_Descreva as dependências deste PR, como: Reindexar a base de dados no ES ou Rodar migration_
 
-## Screnshots (Caso necessário)
-_Caso seja possivel exemplificar a tarefa ou problema com alguma imagem, faça nesse espaço_
+## Screenshots (Caso necessário)
+_Caso seja possível exemplificar a tarefa ou problema com alguma imagem, faça nesse espaço_
 
 _Antes:_
 _Depois:_
