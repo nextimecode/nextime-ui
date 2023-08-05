@@ -1,5 +1,4 @@
-name: AI Code Reviewer
-
+name: Code Review with OpenAI
 on:
   pull_request:
     types:
@@ -7,42 +6,15 @@ on:
       - synchronize
 permissions: write-all
 jobs:
-  review:
+  code_review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 8
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: AI Code Reviewer
+      - name: Code Review
         uses: nextimecode/ai-codereviewer@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_MODEL: ${{ secrets.OPENAI_API_MODEL }}
-          exclude: '**/*.json, **/*.md' # Optional: exclude patterns separated by commas
+          exclude: 'pnpm-lock, dist/**, **/*.json, **/*.md, .turbo/**, storybook-static/**, .storybook/**, .vscode/**'
