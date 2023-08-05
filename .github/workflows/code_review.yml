@@ -1,5 +1,4 @@
-name: AI Code Reviewer
-
+name: Code Review with OpenAI
 on:
   pull_request:
     types:
@@ -7,15 +6,15 @@ on:
       - synchronize
 permissions: write-all
 jobs:
-  review:
+  code_review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: AI Code Reviewer
+      - name: Code Review
         uses: nextimecode/ai-codereviewer@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
+          OPENAI_API_MODEL: ${{ secrets.OPENAI_API_MODEL }}
+          exclude: 'pnpm-lock, dist/**, **/*.json, **/*.md, .turbo/**, storybook-static/**, .storybook/**, .vscode/**'
