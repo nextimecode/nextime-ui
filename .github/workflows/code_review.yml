@@ -45,4 +45,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_MODEL: ${{ secrets.OPENAI_API_MODEL }}
-          exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
+          exclude: '**/*.json, **/*.md' # Optional: exclude patterns separated by commas
