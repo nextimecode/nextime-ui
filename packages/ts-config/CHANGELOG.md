@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 2.5.1
+
+### Patch Changes
+
+- 9eec616: update packlog
+
 ## 2.5.0
 
 ### Minor Changes
