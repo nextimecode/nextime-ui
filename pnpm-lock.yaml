@@ -115,13 +115,13 @@ importers:
         version: 10.15.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@nextime-ui/eslint-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../eslint-config
       '@nextime-ui/tokens':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../tokens
       '@nextime-ui/ts-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../ts-config
       '@types/react':
         specifier: ^18.2.18
@@ -142,10 +142,10 @@ importers:
   packages/tokens:
     devDependencies:
       '@nextime-ui/eslint-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../eslint-config
       '@nextime-ui/ts-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../ts-config
       tsup:
         specifier: ^7.2.0
