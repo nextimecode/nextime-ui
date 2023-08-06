@@ -1,8 +1,6 @@
 name: preview
 
 on:
-  push:
-    branches: ['main']
   pull_request:
     branches: ['main']
 
