@@ -1,5 +1,5 @@
 'use client'
-
+import { useToast } from '@chakra-ui/react'
 // Layout
 export * from './components/AspectRatio'
 export * from './components/Box'
@@ -98,7 +98,7 @@ export * from './components/CircularProgress'
 export * from './components/CircularProgressLabel'
 export * from './components/Progress'
 export * from './components/Skeleton'
-export * from './components/SkeletonCircle'
+export { SkeletonCircle } from './components/SkeletonCircle'
 export * from './components/SkeletonText'
 export * from './components/Spinner'
-export * from './components/useToast'
+export { useToast }
