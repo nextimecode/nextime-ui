@@ -22,7 +22,7 @@ importers:
     devDependencies:
       '@chakra-ui/storybook-addon':
         specifier: ^5.0.1
-        version: 5.0.1(@chakra-ui/react@2.8.0)(@storybook/components@7.1.1)(@storybook/manager-api@7.2.1)(@storybook/preview-api@7.1.1)(@storybook/types@7.1.1)(react-dom@18.2.0)(react@18.2.0)
+        version: 5.0.1(@chakra-ui/react@2.8.0)(@storybook/components@7.2.1)(@storybook/manager-api@7.2.1)(@storybook/preview-api@7.2.1)(@storybook/types@7.2.1)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/eslint-config':
         specifier: workspace:^
         version: link:../eslint-config
@@ -95,9 +95,15 @@ importers:
 
   packages/react:
     dependencies:
+      '@chakra-ui/icons':
+        specifier: ^2.1.0
+        version: 2.1.0(@chakra-ui/system@2.6.0)(react@18.2.0)
       '@chakra-ui/react':
         specifier: ^2.8.0
         version: 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.18)(framer-motion@10.15.0)(react-dom@18.2.0)(react@18.2.0)
+      '@chakra-ui/skip-nav':
+        specifier: ^2.1.0
+        version: 2.1.0(@chakra-ui/system@2.6.0)(react@18.2.0)
       '@emotion/react':
         specifier: ^11.11.1
         version: 11.11.1(@types/react@18.2.18)(react@18.2.0)
@@ -109,13 +115,13 @@ importers:
         version: 10.15.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@nextime-ui/eslint-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../eslint-config
       '@nextime-ui/tokens':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../tokens
       '@nextime-ui/ts-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../ts-config
       '@types/react':
         specifier: ^18.2.18
@@ -136,10 +142,10 @@ importers:
   packages/tokens:
     devDependencies:
       '@nextime-ui/eslint-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../eslint-config
       '@nextime-ui/ts-config':
-        specifier: ^2.4.1
+        specifier: ^2.5.0
         version: link:../ts-config
       tsup:
         specifier: ^7.2.0
@@ -1731,6 +1737,17 @@ packages:
       '@chakra-ui/system': 2.6.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0)
       react: 18.2.0
 
+  /@chakra-ui/icons@2.1.0(@chakra-ui/system@2.6.0)(react@18.2.0):
+    resolution: {integrity: sha512-pGFxFfQ/P5VnSRnTzK8zGAJxoxkxpHo/Br9ohRZdOpuhnIHSW7va0P53UoycEO5/vNJ/7BN0oDY0k9qurChcew==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/icon': 3.1.0(@chakra-ui/system@2.6.0)(react@18.2.0)
+      '@chakra-ui/system': 2.6.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@chakra-ui/image@2.1.0(@chakra-ui/system@2.6.0)(react@18.2.0):
     resolution: {integrity: sha512-bskumBYKLiLMySIWDGcz0+D9Th0jPvmX6xnRMs4o92tT3Od/bW26lahmV2a2Op2ItXeCmRMY+XxJH5Gy1i46VA==}
     peerDependencies:
@@ -2303,7 +2320,7 @@ packages:
       '@chakra-ui/system': 2.6.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0)
       react: 18.2.0
 
-  /@chakra-ui/storybook-addon@5.0.1(@chakra-ui/react@2.8.0)(@storybook/components@7.1.1)(@storybook/manager-api@7.2.1)(@storybook/preview-api@7.1.1)(@storybook/types@7.1.1)(react-dom@18.2.0)(react@18.2.0):
+  /@chakra-ui/storybook-addon@5.0.1(@chakra-ui/react@2.8.0)(@storybook/components@7.2.1)(@storybook/manager-api@7.2.1)(@storybook/preview-api@7.2.1)(@storybook/types@7.2.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-QZ9Ye46a3EuFks9oyI3r/ohqzvoWhv+ObPR6tHyFCgIQSlwFCap8849Ue/+r6UAEjmgfD+4pdtfqgu9Kv+LqjA==}
     peerDependencies:
       '@chakra-ui/react': '>=2.0.0'
@@ -2320,10 +2337,10 @@ packages:
         optional: true
     dependencies:
       '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.18)(framer-motion@10.15.0)(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/components': 7.1.1(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.2.1(react-dom@18.2.0)(react@18.2.0)
       '@storybook/manager-api': 7.2.1(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/preview-api': 7.1.1
-      '@storybook/types': 7.1.1
+      '@storybook/preview-api': 7.2.1
+      '@storybook/types': 7.2.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
@@ -4215,24 +4232,6 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/channel-postmessage@7.1.1:
-    resolution: {integrity: sha512-Gmjh3feilXKLmZkQdjgkT8BRrfHnrBJJ8CY86MwD4wQlohObeFIXfhueRof4vJEGvIfJwooUrk9CkkXb5YbluQ==}
-    dependencies:
-      '@storybook/channels': 7.1.1
-      '@storybook/client-logger': 7.1.1
-    dev: true
-
-  /@storybook/channels@7.1.1:
-    resolution: {integrity: sha512-uhkZFtLIeRnbBhyLlvQAZQmsRbftX/YMGQL+9WRzICrCkwl4xfZPAvMxEgCj1iJzNFcaX5ma9XzHb7q/i+wUCw==}
-    dependencies:
-      '@storybook/client-logger': 7.1.1
-      '@storybook/core-events': 7.1.1
-      '@storybook/global': 5.0.0
-      qs: 6.11.2
-      telejson: 7.1.0
-      tiny-invariant: 1.3.1
-    dev: true
-
   /@storybook/channels@7.2.1:
     resolution: {integrity: sha512-3ZogzjwlFG+oarwnI7TTvWvHVOUtJbjrgZkM5QuLMlxNzIR1XuBY8f01yf4K8+VpdNy9DY+7Q/j6tBThfwYvpA==}
     dependencies:
@@ -4295,12 +4294,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@storybook/client-logger@7.1.1:
-    resolution: {integrity: sha512-R0bdVjzJ5CwLNAG3XMyMZ0e9XDteBkFkTTIZJ9m+WMh/+oa2PInCpXDxoYb180UI6abrqh1jEaAsrHMC1pTKnA==}
-    dependencies:
-      '@storybook/global': 5.0.0
-    dev: true
-
   /@storybook/client-logger@7.2.1:
     resolution: {integrity: sha512-Lyht/lJg2S65CXRy9rXAZXP/Mgye7jbi/aqQL8z9VRMGChbL+k/3pSZnXTTrD1OVSpCEr4UWA+9bStzT4VjtYA==}
     dependencies:
@@ -4326,24 +4319,6 @@ packages:
       recast: 0.23.3
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@storybook/components@7.1.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-RUSjDj2RDTZsdKfs48oY+3iaL/y3GHU07zuHm/V4kuEHqJscXUt3n5vIX/Z/GtezMrxc0aPDlCSyS/N/EU6bUQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      '@storybook/client-logger': 7.1.1
-      '@storybook/csf': 0.1.1
-      '@storybook/global': 5.0.0
-      '@storybook/theming': 7.1.1(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/types': 7.1.1
-      memoizerific: 1.11.3
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      use-resize-observer: 9.1.0(react-dom@18.2.0)(react@18.2.0)
-      util-deprecate: 1.0.2
     dev: true
 
   /@storybook/components@7.2.1(react-dom@18.2.0)(react@18.2.0):
@@ -4404,10 +4379,6 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
-    dev: true
-
-  /@storybook/core-events@7.1.1:
-    resolution: {integrity: sha512-P5iI4zvCJo85de/sghglEHFK/GGkWAQQKzRFrz9kbVBX5LNaosfD7IYHIz/6ZWNPzxWR+RBOKcrRUfcArL4Njg==}
     dev: true
 
   /@storybook/core-events@7.2.1:
@@ -4582,26 +4553,6 @@ packages:
     resolution: {integrity: sha512-xOzX1MygQ+9xpku6FuODhXvfv/CcKlQPOGpZk8ejE/04Eow0JHluGI1cxdnpqGcCBygkw7DP+xrtQCv75c7Gjg==}
     dev: true
 
-  /@storybook/preview-api@7.1.1:
-    resolution: {integrity: sha512-uI8TVuoFfg3EBdaKdRVUa17JfGdmK78JI3+byLZLkzl6nR+q846BWHgi8eJmU8MHmO5CFaqT2kts/e8T34JDgw==}
-    dependencies:
-      '@storybook/channel-postmessage': 7.1.1
-      '@storybook/channels': 7.1.1
-      '@storybook/client-logger': 7.1.1
-      '@storybook/core-events': 7.1.1
-      '@storybook/csf': 0.1.1
-      '@storybook/global': 5.0.0
-      '@storybook/types': 7.1.1
-      '@types/qs': 6.9.7
-      dequal: 2.0.3
-      lodash: 4.17.21
-      memoizerific: 1.11.3
-      qs: 6.11.2
-      synchronous-promise: 2.0.17
-      ts-dedent: 2.2.0
-      util-deprecate: 1.0.2
-    dev: true
-
   /@storybook/preview-api@7.2.1:
     resolution: {integrity: sha512-WKecuOdeh9+og6bPR9KoQf/JCeSRPCcfZv9uNfJzAp3IiTnS3UpfCz+HBZzZJQrisgbd7OulNY400HQUmxY2Ag==}
     dependencies:
@@ -4740,20 +4691,6 @@ packages:
       ts-dedent: 2.2.0
     dev: true
 
-  /@storybook/theming@7.1.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-8ri/BvfgUzBln9EYB8N/xgRaxZIFFTG0IEEekuV2H5uv4q9JW9p3E5zqghmM1OC/vspJJa8e4Eajb1YiTO0W6w==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
-      '@storybook/client-logger': 7.1.1
-      '@storybook/global': 5.0.0
-      memoizerific: 1.11.3
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: true
-
   /@storybook/theming@7.2.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-cfnNCLvKmzxjmoYKfLl7Q64gSTouLvd23CtvBAOlWcRYnMJ9v4/7A2tK3xQyVRlJYh9OuXiHFLL8AXbN58Hkzw==}
     peerDependencies:
@@ -4766,15 +4703,6 @@ packages:
       memoizerific: 1.11.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: true
-
-  /@storybook/types@7.1.1:
-    resolution: {integrity: sha512-0yxEHxYd/N0XfVCGrEq86QIMC4ljZBspHSDrjdLSCIYmmglMvwKboZBgHlLQmpcLP+of8m1E8Frbslpnt0giBg==}
-    dependencies:
-      '@storybook/channels': 7.1.1
-      '@types/babel__core': 7.20.1
-      '@types/express': 4.17.17
-      file-system-cache: 2.3.0
     dev: true
 
   /@storybook/types@7.2.1:
