@@ -1,14 +1,14 @@
 {
-  "peacock.color": "#4882F8",
+  "peacock.color": "#2D426D",
   "peacock.affectTitleBar": false,
   "peacock.affectStatusBar": true,
   "peacock.affectActivityBar": false,
   "peacock.affectSashHover": false,
   "workbench.colorCustomizations": {
-    "statusBar.background": "#4882f8",
+    "statusBar.background": "#2d426d",
     "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#79a4fa",
-    "statusBarItem.remoteBackground": "#4882f8",
+    "statusBarItem.hoverBackground": "#3c5891",
+    "statusBarItem.remoteBackground": "#2d426d",
     "statusBarItem.remoteForeground": "#e7e7e7"
   }
 }
