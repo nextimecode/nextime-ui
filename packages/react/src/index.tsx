@@ -199,3 +199,9 @@ export { CloseButton } from '@chakra-ui/react'
 export { Portal } from '@chakra-ui/react'
 export { Show, Hide } from '@chakra-ui/react'
 export { Fade, ScaleFade, Slide, SlideFade, Collapse } from '@chakra-ui/react'
+
+export type { SystemStyleObject } from '@chakra-ui/react'
+
+export { mode } from '@chakra-ui/theme-tools'
+
+export type { ColorMode } from '@chakra-ui/react'
