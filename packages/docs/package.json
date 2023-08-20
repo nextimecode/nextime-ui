@@ -2,17 +2,18 @@
   "name": "@nextime-ui/docs",
   "version": "2.2.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build": "storybook build",
-    "clean": "rm -rf .turbo node_modules storybook-static pnpm-lock.yaml",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "updateAll": "pnpm update --latest"
-  },
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "storybook build",
+    "clean": "rm -rf .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml storybook-static",
+    "dev": "storybook dev -p 6006",
+    "lint": "eslint src/**/*.ts* --fix",
+    "typecheck": "tsc --noEmit",
+    "update": "pnpm update --latest"
+  },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.0.1",
     "@nextime-ui/eslint-config": "workspace:^",

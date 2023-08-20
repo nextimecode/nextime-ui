@@ -1,13 +1,14 @@
 {
   "name": "@nextime-ui/eslint-config",
   "version": "2.5.1",
-  "license": "MIT",
-  "private": false,
   "description": "ESLint configuration used by NeXTIME.",
+  "keywords": [],
+  "author": "Pedro Duarte - NeXTIME",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf node_modules",
-    "updateAll": "pnpm update --latest"
+    "update": "pnpm update --latest"
   },
   "dependencies": {
     "@rocketseat/eslint-config": "^2.1.0",

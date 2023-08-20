@@ -2,6 +2,10 @@
   "name": "@nextime-ui/tokens",
   "version": "2.5.1",
   "description": "",
+  "private": false,
+  "keywords": [],
+  "author": "Pedro Duarte - NeXTIME",
+  "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,12 +15,8 @@
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "lint": "eslint src/**/*.ts* --fix",
     "typecheck": "tsc --noEmit",
-    "updateAll": "pnpm update --latest"
+    "update": "pnpm update --latest"
   },
-  "keywords": [],
-  "author": "Pedro Duarte - NeXTIME",
-  "license": "MIT",
-  "private": false,
   "devDependencies": {
     "@nextime-ui/eslint-config": "^2.5.1",
     "@nextime-ui/ts-config": "^2.5.1",

@@ -1,29 +1,63 @@
 {
   "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [
+    "**/.env.*local",
+    "tsconfig.json"
+  ],
   "pipeline": {
-    "dev": {
-      "cache": false
-    },
     "build": {
+      "cache": true,
+      "dependsOn": [],
       "outputs": [
         "dist/**",
         "storybook-static/**"
-      ],
-      "dependsOn": [
-        "^build"
       ]
     },
-    "clean": {
-      "cache": false
+    "cleanAll": {
+      "cache": false,
+      "dependsOn": [],
+      "outputs": []
+    },
+    "dev": {
+      "cache": false,
+      "dependsOn": [],
+      "persistent": true
     },
     "lint": {
+      "cache": true,
+      "outputs": [],
+      "dependsOn": []
+    },
+    "resetAll": {
+      "cache": false,
+      "dependsOn": [
+        "clean"
+      ],
+      "outputs": []
+    },
+    "semantic-release": {
+      "cache": false,
+      "dependsOn": [
+        "build"
+      ],
+      "outputMode": "new-only"
+    },
+    "start": {
+      "cache": true,
+      "dependsOn": [
+        "build"
+      ],
       "outputs": []
     },
     "typecheck": {
+      "cache": true,
       "outputs": [
         "tsconfig.tsbuildinfo"
       ]
     },
-    "updateAll": {}
+    "updateAll": {
+      "cache": true,
+      "outputs": []
+    }
   }
 }
