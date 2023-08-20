@@ -1,5 +1,8 @@
 module.exports = {
-  extends: ["@rocketseat/eslint-config/next"],
+  extends: [
+    "@rocketseat/eslint-config/next",
+    "plugin:prettier/recommended"
+  ],
   plugins: ["eslint-plugin-import-helpers"],
   rules: {
     "import-helpers/order-imports": [
@@ -15,12 +18,14 @@ module.exports = {
           "/^@shared/",
           "/^@\\//",
           "/absolute/",
-          ["parent", "sibling", "index"]],
+          ["parent", "sibling", "index"]
+        ],
         alphabetize: {
           order: "asc",
           ignoreCase: true
         }
       }
-    ]
+    ],
+    "prettier/prettier": ["error", { trailingComma: "none" }]
   }
 }
