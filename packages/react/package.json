@@ -36,13 +36,13 @@
     "@chakra-ui/skip-nav": "^2.1.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "framer-motion": "^10.15.0"
+    "framer-motion": "^10.16.0"
   },
   "devDependencies": {
-    "@nextime-ui/eslint-config": "^2.5.1",
-    "@nextime-ui/tokens": "^2.5.1",
-    "@nextime-ui/ts-config": "^2.5.1",
-    "@types/react": "^18.2.18",
+    "@nextime-ui/eslint-config": "workspace:^",
+    "@nextime-ui/tokens": "workspace:^",
+    "@nextime-ui/ts-config": "workspace:^",
+    "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "tsup": "^7.2.0",

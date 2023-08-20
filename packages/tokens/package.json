@@ -18,8 +18,8 @@
     "update": "pnpm update --latest"
   },
   "devDependencies": {
-    "@nextime-ui/eslint-config": "^2.5.1",
-    "@nextime-ui/ts-config": "^2.5.1",
+    "@nextime-ui/eslint-config": "workspace:^",
+    "@nextime-ui/ts-config": "workspace:^",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
   }
