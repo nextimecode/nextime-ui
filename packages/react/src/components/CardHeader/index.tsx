@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   CardHeader as ChakraCardHeader,
-  CardHeaderProps as ChakraCardHeaderProps,
+  CardHeaderProps as ChakraCardHeaderProps
 } from '@chakra-ui/react'
 
 export interface CardHeaderProps extends ChakraCardHeaderProps {

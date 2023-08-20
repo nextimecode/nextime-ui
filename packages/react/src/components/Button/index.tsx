@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Button as ChakraButton,
-  ButtonProps as ChakraButtonProps,
+  ButtonProps as ChakraButtonProps
 } from '@chakra-ui/react'
 
 export interface ButtonProps extends ChakraButtonProps {

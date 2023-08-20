@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   SimpleGrid as ChakraSimpleGrid,
-  SimpleGridProps as ChakraSimpleGridProps,
+  SimpleGridProps as ChakraSimpleGridProps
 } from '@chakra-ui/react'
 
 export interface SimpleGridProps extends ChakraSimpleGridProps {

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Th as ChakraTh,
-  TableColumnHeaderProps as ChakraTableColumnHeaderProps,
+  TableColumnHeaderProps as ChakraTableColumnHeaderProps
 } from '@chakra-ui/react'
 
 export interface TableColumnHeaderProps extends ChakraTableColumnHeaderProps {

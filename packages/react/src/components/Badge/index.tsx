@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Badge as ChakraBadge,
-  BadgeProps as ChakraBadgeProps,
+  BadgeProps as ChakraBadgeProps
 } from '@chakra-ui/react'
 
 export interface BadgeProps extends ChakraBadgeProps {

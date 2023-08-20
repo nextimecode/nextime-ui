@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   OrderedList as ChakraOrderedList,
-  ListProps as ChakraListProps,
+  ListProps as ChakraListProps
 } from '@chakra-ui/react'
 
 export interface ListProps extends ChakraListProps {

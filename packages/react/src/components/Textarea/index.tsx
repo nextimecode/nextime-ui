@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Textarea as ChakraTextarea,
-  TextareaProps as ChakraTextareaProps,
+  TextareaProps as ChakraTextareaProps
 } from '@chakra-ui/react'
 
 export interface TextareaProps extends ChakraTextareaProps {

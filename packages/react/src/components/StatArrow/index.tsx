@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   StatArrow as ChakraStatArrow,
-  StatArrowProps as ChakraStatArrowProps,
+  StatArrowProps as ChakraStatArrowProps
 } from '@chakra-ui/react'
 
 export interface StatArrowProps extends ChakraStatArrowProps {

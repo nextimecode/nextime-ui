@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   FormLabel as ChakraFormLabel,
-  FormLabelProps as ChakraFormLabelProps,
+  FormLabelProps as ChakraFormLabelProps
 } from '@chakra-ui/react'
 
 export interface FormLabelProps extends ChakraFormLabelProps {

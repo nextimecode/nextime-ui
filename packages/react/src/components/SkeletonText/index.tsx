@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   SkeletonText as ChakraSkeletonText,
-  SkeletonTextProps as ChakraSkeletonTextProps,
+  SkeletonTextProps as ChakraSkeletonTextProps
 } from '@chakra-ui/react'
 
 export interface SkeletonTextProps extends ChakraSkeletonTextProps {

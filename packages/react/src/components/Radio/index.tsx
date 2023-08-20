@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Radio as ChakraRadio,
-  RadioProps as ChakraRadioProps,
+  RadioProps as ChakraRadioProps
 } from '@chakra-ui/react'
 
 export interface RadioProps extends ChakraRadioProps {

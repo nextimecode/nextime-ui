@@ -8,11 +8,11 @@ export default {
   component: Box,
   tags: ['autodocs'],
   args: {
-    children: 'This is the Box',
+    children: 'This is the Box'
   },
-  argTypes: {},
+  argTypes: {}
 } as Meta<BoxProps>
 
 export const Usage: StoryObj<BoxProps> = {
-  args: {},
+  args: {}
 }

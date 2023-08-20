@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   FormErrorMessage as ChakraFormErrorMessage,
-  FormErrorMessageProps as ChakraFormErrorMessageProps,
+  FormErrorMessageProps as ChakraFormErrorMessageProps
 } from '@chakra-ui/react'
 
 export interface FormErrorMessageProps extends ChakraFormErrorMessageProps {

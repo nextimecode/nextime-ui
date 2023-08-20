@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Square as ChakraSquare,
-  SquareProps as ChakraSquareProps,
+  SquareProps as ChakraSquareProps
 } from '@chakra-ui/react'
 
 export interface SquareProps extends ChakraSquareProps {

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   CardFooter as ChakraCardFooter,
-  CardFooterProps as ChakraCardFooterProps,
+  CardFooterProps as ChakraCardFooterProps
 } from '@chakra-ui/react'
 
 export interface CardFooterProps extends ChakraCardFooterProps {

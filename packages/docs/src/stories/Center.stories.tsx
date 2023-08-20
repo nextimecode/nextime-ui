@@ -8,15 +8,15 @@ export default {
   component: Center,
   tags: ['autodocs'],
   args: {
-    children: 'This is the Center',
+    children: 'This is the Center'
   },
-  argTypes: {},
+  argTypes: {}
 } as Meta<CenterProps>
 
 export const Usage: StoryObj<CenterProps> = {
   args: {
     bg: 'tomato',
     h: '100px',
-    color: 'white',
-  },
+    color: 'white'
+  }
 }

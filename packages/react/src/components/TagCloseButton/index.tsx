@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   TagCloseButton as ChakraTagCloseButton,
-  TagCloseButtonProps as ChakraTagCloseButtonProps,
+  TagCloseButtonProps as ChakraTagCloseButtonProps
 } from '@chakra-ui/react'
 
 export interface TagCloseButtonProps extends ChakraTagCloseButtonProps {

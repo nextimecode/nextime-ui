@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   ListItem as ChakraListItem,
-  ListItemProps as ChakraListItemProps,
+  ListItemProps as ChakraListItemProps
 } from '@chakra-ui/react'
 
 export interface ListItemProps extends ChakraListItemProps {

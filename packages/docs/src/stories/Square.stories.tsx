@@ -8,15 +8,15 @@ export default {
   component: Square,
   tags: ['autodocs'],
   args: {
-    children: 'S',
+    children: 'S'
   },
-  argTypes: {},
+  argTypes: {}
 } as Meta<SquareProps>
 
 export const Usage: StoryObj<SquareProps> = {
   args: {
     size: '60px',
     bg: 'purple.700',
-    color: 'white',
-  },
+    color: 'white'
+  }
 }

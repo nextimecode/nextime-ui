@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Progress as ChakraProgress,
-  ProgressProps as ChakraProgressProps,
+  ProgressProps as ChakraProgressProps
 } from '@chakra-ui/react'
 
 export interface ProgressProps extends ChakraProgressProps {

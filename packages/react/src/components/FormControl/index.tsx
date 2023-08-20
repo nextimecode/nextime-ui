@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   FormControl as ChakraFormControl,
-  FormControlProps as ChakraFormControlProps,
+  FormControlProps as ChakraFormControlProps
 } from '@chakra-ui/react'
 
 export interface FormControlProps extends ChakraFormControlProps {

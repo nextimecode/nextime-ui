@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   AlertIcon as ChakraAlertIcon,
-  AlertIconProps as ChakraAlertIconProps,
+  AlertIconProps as ChakraAlertIconProps
 } from '@chakra-ui/react'
 
 export interface AlertIconProps extends ChakraAlertIconProps {

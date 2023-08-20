@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   CircularProgress as ChakraCircularProgress,
-  CircularProgressProps as ChakraCircularProgressProps,
+  CircularProgressProps as ChakraCircularProgressProps
 } from '@chakra-ui/react'
 
 export interface CircularProgressProps extends ChakraCircularProgressProps {

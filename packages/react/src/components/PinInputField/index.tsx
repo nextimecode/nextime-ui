@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   PinInputField as ChakraPinInputField,
-  PinInputFieldProps as ChakraPinInputFieldProps,
+  PinInputFieldProps as ChakraPinInputFieldProps
 } from '@chakra-ui/react'
 
 export interface PinInputFieldProps extends ChakraPinInputFieldProps {

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   AspectRatio as ChakraAspectRatio,
-  AspectRatioProps as ChakraAspectRatioProps,
+  AspectRatioProps as ChakraAspectRatioProps
 } from '@chakra-ui/react'
 
 export interface AspectRatioProps extends ChakraAspectRatioProps {

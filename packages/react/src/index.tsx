@@ -118,7 +118,7 @@ export {
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
-  AlertDialogCloseButton,
+  AlertDialogCloseButton
 } from '@chakra-ui/react'
 export {
   Drawer,
@@ -127,7 +127,7 @@ export {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
+  DrawerCloseButton
 } from '@chakra-ui/react'
 export {
   Menu,
@@ -137,7 +137,7 @@ export {
   MenuItemOption,
   MenuGroup,
   MenuOptionGroup,
-  MenuDivider,
+  MenuDivider
 } from '@chakra-ui/react'
 export {
   Modal,
@@ -146,7 +146,7 @@ export {
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,
+  ModalCloseButton
 } from '@chakra-ui/react'
 export {
   Popover,
@@ -157,7 +157,7 @@ export {
   PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
+  PopoverAnchor
 } from '@chakra-ui/react'
 export { Tooltip } from '@chakra-ui/react'
 
@@ -167,7 +167,7 @@ export {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
+  AccordionIcon
 } from '@chakra-ui/react'
 export { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 export { VisuallyHidden, VisuallyHiddenInput } from '@chakra-ui/react'
@@ -185,7 +185,7 @@ export {
   StepStatus,
   StepTitle,
   Stepper,
-  useSteps,
+  useSteps
 } from '@chakra-ui/react'
 
 // Media and Icons

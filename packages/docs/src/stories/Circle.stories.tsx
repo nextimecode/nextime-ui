@@ -8,15 +8,15 @@ export default {
   component: Circle,
   tags: ['autodocs'],
   args: {
-    children: 'C',
+    children: 'C'
   },
-  argTypes: {},
+  argTypes: {}
 } as Meta<CircleProps>
 
 export const Usage: StoryObj<CircleProps> = {
   args: {
     size: '60px',
     bg: 'tomato',
-    color: 'white',
-  },
+    color: 'white'
+  }
 }

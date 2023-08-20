@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   NumberInputField as ChakraNumberInputField,
-  NumberInputFieldProps as ChakraNumberInputFieldProps,
+  NumberInputFieldProps as ChakraNumberInputFieldProps
 } from '@chakra-ui/react'
 
 export interface NumberInputFieldProps extends ChakraNumberInputFieldProps {

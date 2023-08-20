@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   EditableInput as ChakraEditableInput,
-  EditableInputProps as ChakraEditableInputProps,
+  EditableInputProps as ChakraEditableInputProps
 } from '@chakra-ui/react'
 
 export interface EditableInputProps extends ChakraEditableInputProps {

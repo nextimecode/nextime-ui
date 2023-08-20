@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Divider as ChakraDivider,
-  DividerProps as ChakraDividerProps,
+  DividerProps as ChakraDividerProps
 } from '@chakra-ui/react'
 
 export interface DividerProps extends ChakraDividerProps {

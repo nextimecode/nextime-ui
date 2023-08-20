@@ -8,41 +8,41 @@ export default {
   component: Button,
   tags: ['autodocs'],
   args: {
-    children: 'Button',
+    children: 'Button'
   },
   argTypes: {
     colorScheme: {
       options: ['whiteAlpha', 'blackAlpha', 'gray'],
       control: {
-        type: 'inline-radio',
-      },
-    },
-  },
+        type: 'inline-radio'
+      }
+    }
+  }
 } as Meta<ButtonProps>
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Usage = {
   args: {
     colorScheme: 'blue',
-    children: 'Button',
-  },
+    children: 'Button'
+  }
 }
 
 export const Large = {
   args: {
-    size: 'large',
-  },
+    size: 'large'
+  }
 }
 
 export const Small = {
   args: {
-    size: 'small',
-  },
+    size: 'small'
+  }
 }
 
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
-    children: 'Disabled',
-  },
+    children: 'Disabled'
+  }
 }

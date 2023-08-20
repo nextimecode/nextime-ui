@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   WrapItem as ChakraWrapItem,
-  WrapItemProps as ChakraWrapItemProps,
+  WrapItemProps as ChakraWrapItemProps
 } from '@chakra-ui/react'
 
 export interface WrapItemProps extends ChakraWrapItemProps {

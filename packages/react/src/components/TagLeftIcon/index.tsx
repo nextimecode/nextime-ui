@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   TagLeftIcon as ChakraTagLeftIcon,
-  IconProps as ChakraIconProps,
+  IconProps as ChakraIconProps
 } from '@chakra-ui/react'
 
 export interface IconProps extends ChakraIconProps {

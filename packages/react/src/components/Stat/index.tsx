@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Stat as ChakraStat,
-  StatProps as ChakraStatProps,
+  StatProps as ChakraStatProps
 } from '@chakra-ui/react'
 
 export interface StatProps extends ChakraStatProps {

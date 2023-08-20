@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Select as ChakraSelect,
-  SelectProps as ChakraSelectProps,
+  SelectProps as ChakraSelectProps
 } from '@chakra-ui/react'
 
 export interface SelectProps extends ChakraSelectProps {

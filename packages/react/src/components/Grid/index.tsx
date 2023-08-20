@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Grid as ChakraGrid,
-  GridProps as ChakraGridProps,
+  GridProps as ChakraGridProps
 } from '@chakra-ui/react'
 
 export interface GridProps extends ChakraGridProps {

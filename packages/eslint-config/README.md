@@ -11,11 +11,13 @@
 ## Setup
 
 1. Install the dependencies
+
 ```
 pnpm i -D eslint @nextime-ui/eslint-config
 ```
 
 2. Create a `.eslintrc.json` file extending the config:
+
 ```
 {
   "extends": "@nextime-ui/eslint-config"

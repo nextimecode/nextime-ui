@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   NumberInputStepper as ChakraNumberInputStepper,
-  NumberInputStepperProps as ChakraNumberInputStepperProps,
+  NumberInputStepperProps as ChakraNumberInputStepperProps
 } from '@chakra-ui/react'
 
 export interface NumberInputStepperProps extends ChakraNumberInputStepperProps {

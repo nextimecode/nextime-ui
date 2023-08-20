@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   RangeSlider as ChakraRangeSlider,
-  RangeSliderProps as ChakraRangeSliderProps,
+  RangeSliderProps as ChakraRangeSliderProps
 } from '@chakra-ui/react'
 
 export interface RangeSliderProps extends ChakraRangeSliderProps {

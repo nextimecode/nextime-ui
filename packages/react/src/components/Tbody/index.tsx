@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Tbody as ChakraTbody,
-  TableBodyProps as ChakraTableBodyProps,
+  TableBodyProps as ChakraTableBodyProps
 } from '@chakra-ui/react'
 
 export interface TableBodyProps extends ChakraTableBodyProps {

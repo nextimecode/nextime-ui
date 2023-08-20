@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Stack as ChakraStack,
-  StackProps as ChakraStackProps,
+  StackProps as ChakraStackProps
 } from '@chakra-ui/react'
 
 export interface StackProps extends ChakraStackProps {

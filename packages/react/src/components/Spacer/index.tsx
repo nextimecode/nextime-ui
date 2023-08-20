@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 import {
   Spacer as ChakraSpacer,
-  SpacerProps as ChakraSpacerProps,
+  SpacerProps as ChakraSpacerProps
 } from '@chakra-ui/react'
 
 export interface SpacerProps extends ChakraSpacerProps {
