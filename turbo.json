@@ -13,6 +13,11 @@
         "storybook-static/**"
       ]
     },
+    "clean": {
+      "cache": false,
+      "dependsOn": [],
+      "outputs": []
+    },
     "cleanAll": {
       "cache": false,
       "dependsOn": [],

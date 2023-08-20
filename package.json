@@ -22,7 +22,7 @@
     "lint": "turbo run lint --parallel",
     "release": "turbo run build --filter=!docs && changeset publish",
     "semantic-release": "semantic-release",
-    "resetAll": "turbo run cleanAll && pnpm i && turbo run build --parallel",
+    "resetAll": "turbo run clean && pnpm i && turbo run build --parallel",
     "typecheck": "turbo run typecheck --parallel",
     "updateAll": "turbo run update --parallel && pnpm update --latest",
     "version-packages": "changeset version"
