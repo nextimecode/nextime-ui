@@ -5,7 +5,21 @@ import PropTypes from 'prop-types'
 import { Button } from './Button'
 import './header.css'
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+type HeaderProps = {
+  user: {
+    name: string
+  } | null
+  onLogin: () => void
+  onLogout: () => void
+  onCreateAccount: () => void
+}
+
+export const Header = ({
+  user,
+  onLogin,
+  onLogout,
+  onCreateAccount,
+}: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>

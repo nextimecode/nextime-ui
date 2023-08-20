@@ -55,6 +55,10 @@
         "tsconfig.tsbuildinfo"
       ]
     },
+    "update": {
+      "cache": true,
+      "outputs": []
+    },
     "updateAll": {
       "cache": true,
       "outputs": []

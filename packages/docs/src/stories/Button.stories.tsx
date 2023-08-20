@@ -1,5 +1,6 @@
+import { Button, ButtonProps } from '@nextime-ui/react'
+
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from '@nextime-ui/react';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
@@ -23,21 +24,21 @@ export default {
 export const Usage = {
   args: {
     colorScheme: 'blue',
-    children: 'Button'
+    children: 'Button',
   },
-};
+}
 
 export const Large = {
   args: {
     size: 'large',
   },
-};
+}
 
 export const Small = {
   args: {
     size: 'small',
   },
-};
+}
 
 export const Disabled: StoryObj<ButtonProps> = {
   args: {

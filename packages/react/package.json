@@ -28,7 +28,7 @@
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix",
     "typecheck": "tsc --noEmit",
-    "updateAll": "pnpm update --latest"
+    "update": "pnpm update --latest"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
