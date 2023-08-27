@@ -23,6 +23,7 @@ module.exports = {
     "eslint-plugin-import-helpers"
   ],
   rules: {
+    'comma-dangle': 'off',
     "import-helpers/order-imports": [
       "error",
       {

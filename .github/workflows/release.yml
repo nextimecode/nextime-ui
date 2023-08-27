@@ -24,7 +24,7 @@ jobs:
       - name: Setup pnpm and cache
         uses: ./.github/actions/prepare
 
-      - name: Publish to PNPM
+      - name: Publish to NPM
         id: changesets
         uses: changesets/action@v1
         with:
