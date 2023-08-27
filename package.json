@@ -16,15 +16,15 @@
   "scripts": {
     "build": "turbo run build --parallel",
     "changeset": "changeset",
-    "cleanAll": "turbo run clean --parallel && pnpm store prune && rm -rf .next .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
+    "clean:all": "turbo run clean --parallel && pnpm store prune && rm -rf .next .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
     "dev": "turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint --parallel",
     "release": "turbo run build --filter=!docs && changeset publish",
     "semantic-release": "semantic-release",
-    "resetAll": "turbo run clean && pnpm i && turbo run build --parallel",
+    "reset:all": "turbo run clean && pnpm i && turbo run build --parallel",
     "typecheck": "turbo run typecheck --parallel",
-    "updateAll": "turbo run update --parallel && pnpm update --latest",
+    "update:all": "turbo run update --parallel && pnpm update --latest",
     "version-packages": "changeset version"
   },
   "devDependencies": {

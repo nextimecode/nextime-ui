@@ -18,7 +18,7 @@
       "dependsOn": [],
       "outputs": []
     },
-    "cleanAll": {
+    "clean:all": {
       "cache": false,
       "dependsOn": [],
       "outputs": []
@@ -33,7 +33,7 @@
       "outputs": [],
       "dependsOn": []
     },
-    "resetAll": {
+    "reset:all": {
       "cache": false,
       "dependsOn": [
         "clean"
@@ -64,7 +64,7 @@
       "cache": true,
       "outputs": []
     },
-    "updateAll": {
+    "update:all": {
       "cache": true,
       "outputs": []
     }
