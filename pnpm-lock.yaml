@@ -39,16 +39,16 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(@chakra-ui/react@2.8.0)(@storybook/components@7.3.2)(@storybook/manager-api@7.3.2)(@storybook/preview-api@7.3.2)(@storybook/types@7.3.2)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/eslint-config':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../eslint-config
       '@nextime-ui/react':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../react
       '@nextime-ui/tokens':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../tokens
       '@nextime-ui/ts-config':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../ts-config
       '@storybook/addon-essentials':
         specifier: ^7.3.2
@@ -142,13 +142,13 @@ importers:
         version: 10.16.1(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@nextime-ui/eslint-config':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../eslint-config
       '@nextime-ui/tokens':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../tokens
       '@nextime-ui/ts-config':
-        specifier: '*'
+        specifier: workspace:^
         version: link:../ts-config
       '@types/react':
         specifier: ^18.2.21

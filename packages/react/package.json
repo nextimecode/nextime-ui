@@ -40,9 +40,9 @@
     "framer-motion": "^10.16.1"
   },
   "devDependencies": {
-    "@nextime-ui/eslint-config": "*",
-    "@nextime-ui/tokens": "*",
-    "@nextime-ui/ts-config": "*",
+    "@nextime-ui/eslint-config": "workspace:^",
+    "@nextime-ui/tokens": "workspace:^",
+    "@nextime-ui/ts-config": "workspace:^",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
