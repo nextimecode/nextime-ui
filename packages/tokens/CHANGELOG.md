@@ -1,5 +1,11 @@
 # @nextime-ui/tokens
 
+## 2.5.2
+
+### Patch Changes
+
+- update libs
+
 ## 2.5.1
 
 ### Patch Changes
