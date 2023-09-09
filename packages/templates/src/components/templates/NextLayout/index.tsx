@@ -7,8 +7,6 @@ import { Box } from '@chakra-ui/react'
 import { NextWhatsIcon } from '../../atoms/NextWhatsIcon'
 import { NextFooter } from '../../organisms/NextFooter'
 import { NextHeader } from '../../organisms/NextHeader'
-import { NextimeFooter } from '../../organisms/NextimeFooter'
-import { NextMobileMenu } from '../../organisms/NextMobileMenu'
 
 export interface NextCallToActionProps {
   color?: string
@@ -77,7 +75,7 @@ interface NextLayoutProps {
   logoSubtitle?: string
   logoSubtitleColor?: string
   keywords?: Array<string>
-  bg?: string
+  bg: string
   siteName?: string
   socialImageUrl?: string
   isRouterProtect?: boolean
@@ -124,13 +122,6 @@ export function NextLayout({
         >
           <NextWhatsIcon />
         </Link>
-      </Box>
-
-      <Box display={['none', 'block']}>
-        <NextimeFooter />
-      </Box>
-      <Box display={['block', 'none']}>
-        <NextMobileMenu />
       </Box>
     </>
   )

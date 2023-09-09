@@ -1,13 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter, usePathname } from 'next/navigation'
-
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon
-} from '@chakra-ui/icons'
 import {
   Box,
   Flex,
@@ -19,21 +9,30 @@ import {
   PopoverContent,
   Container,
   Button,
-  useToast,
   useColorModeValue,
   HStack,
   Collapse,
   useDisclosure,
-  IconButton
-} from '@chakra-ui/react'
+  IconButton,
+  HamburgerIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  ChevronRightIcon
+} from '@nextime-ui/react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter, usePathname } from 'next/navigation'
 
-import { Gear, Gift, Keyhole } from '@phosphor-icons/react'
+import { Keyhole } from '@phosphor-icons/react'
 
-import { NavItem } from '../../../@types/LandingPageItems'
-import { useAuth } from '../../../contexts/AuthContext'
-import { translateErrorCode } from '../../../lib/translateErrorCode'
-import { Colors } from '../../../theme/colors'
 import { NextLogo } from '../../atoms/NextLogo'
+
+export interface NavItem {
+  children?: Array<NavItem>
+  href: string
+  label: string
+  subLabel?: string
+}
 
 export type Props = {
   isLogged?: boolean
@@ -211,29 +210,6 @@ const MobileNav = ({ navItems = NAV_ITEMS }: Props) => {
   )
 }
 
-const NAV_ITEMS_LOGGED: Array<NavItem> = [
-  {
-    label: 'Descobrir',
-    href: '/discover'
-  },
-  {
-    label: 'Matches',
-    href: '/matches'
-  },
-  {
-    label: 'Preferências',
-    href: '/preferences'
-  },
-  {
-    label: 'Indique',
-    href: '/invite'
-  },
-  {
-    label: 'Perfil',
-    href: '/profile'
-  }
-]
-
 export const NextHeader = ({
   logoSrc = '/images/logos/logo.svg',
   logoWidth = 50,
@@ -242,35 +218,13 @@ export const NextHeader = ({
   logoSubtitle,
   logoSubtitleColor
 }: Props) => {
-  const pathname = usePathname()
   const router = useRouter()
-  const toast = useToast()
   const { isOpen, onToggle } = useDisclosure()
-  const { user, logout } = useAuth()
-  const navItems = user ? NAV_ITEMS_LOGGED : NAV_ITEMS
+  const navItems = NAV_ITEMS
   const iconColor = useColorModeValue('black', 'next-primary')
-  const linkColor = useColorModeValue('black', 'white')
-  const activeColor: Colors = 'next-primary'
-  async function handleLogout() {
-    try {
-      await logout()
-    } catch (error) {
-      toast({
-        title: 'Ops! Encontramos um obstáculo.',
-        description: translateErrorCode((error as Error).message),
-        status: 'error',
-        duration: 9000,
-        isClosable: true
-      })
-    }
-  }
 
   async function handleSubmit() {
-    if (user && !(pathname === '/') && !pathname?.includes('blog')) {
-      handleLogout()
-    } else {
-      await router.push('/login')
-    }
+    await router.push('/login')
   }
 
   return (
@@ -304,27 +258,25 @@ export const NextHeader = ({
                 >
                   {logoSubtitle}
                 </Text>
-                <Text as={'span'}>beta</Text>
+                <Text as={'span'}>Rock dos Solteiros</Text>
               </Flex>
             )}
           </Flex>
-          {!user && (
-            <Flex display={{ base: 'flex', md: 'none' }} me={2}>
-              <IconButton
-                onClick={onToggle}
-                icon={
-                  isOpen ? (
-                    <CloseIcon w={3} h={3} />
-                  ) : (
-                    <HamburgerIcon w={5} h={5} />
-                  )
-                }
-                variant={'ghost'}
-                aria-label={'Toggle Navigation'}
-                color={iconColor}
-              />
-            </Flex>
-          )}
+          <Flex display={{ base: 'flex', md: 'none' }} me={2}>
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+              color={iconColor}
+            />
+          </Flex>
           <HStack
             flex={{ base: 1 }}
             gap={1}
@@ -334,62 +286,33 @@ export const NextHeader = ({
             <Flex display={{ base: 'none', sm: 'flex' }} me={4}>
               <DesktopNav navItems={navItems} />
             </Flex>
-            {user && (
-              <Box display={{ base: 'flex', sm: 'none' }} gap={4}>
-                <Link href="/invite">
-                  <Flex
-                    p={1}
-                    flexDirection="column"
-                    alignItems={'center'}
-                    color={pathname === '/invite' ? activeColor : linkColor}
-                  >
-                    <Gift size={32} />
-                  </Flex>
-                </Link>
-                <Link href="/profile/settings">
-                  <Flex
-                    p={1}
-                    flexDirection="column"
-                    alignItems={'center'}
-                    color={
-                      pathname === '/profile/settings' ? activeColor : linkColor
-                    }
-                  >
-                    <Gear size={32} />
-                  </Flex>
-                </Link>
-              </Box>
-            )}
-            {!user && (
+
+            <Button
+              variant={'ghost'}
+              fontSize={'md'}
+              _hover={{
+                bg: 'next-primary'
+              }}
+              aria-label="Fazer login na plataforma"
+              onClick={() => handleSubmit()}
+            >
+              <Keyhole size={24} />
+              <Text display={['none', 'block']} ms={1}>
+                ENTRAR
+              </Text>
+            </Button>
+            <Link href="/signup">
               <Button
-                variant={'ghost'}
+                variant="outline"
+                borderColor={'next-primary'}
                 fontSize={'md'}
                 _hover={{
                   bg: 'next-primary'
                 }}
-                aria-label="Fazer login na plataforma"
-                onClick={() => handleSubmit()}
               >
-                <Keyhole size={24} />
-                <Text display={['none', 'block']} ms={1}>
-                  ENTRAR
-                </Text>
+                CRIAR CONTA
               </Button>
-            )}
-            {!user && (
-              <Link href="/signup">
-                <Button
-                  variant="outline"
-                  borderColor={'next-primary'}
-                  fontSize={'md'}
-                  _hover={{
-                    bg: 'next-primary'
-                  }}
-                >
-                  CRIAR CONTA
-                </Button>
-              </Link>
-            )}
+            </Link>
           </HStack>
         </Flex>
         <Collapse in={isOpen} animateOpacity>

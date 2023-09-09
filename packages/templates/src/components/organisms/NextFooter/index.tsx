@@ -20,13 +20,11 @@ import {
   Text
 } from '@chakra-ui/react'
 
-import { layout } from '../../../data'
-
 export type NextFooterProps = {
-  bg?: string
+  bg: string
 }
 
-export const NextFooter = ({ bg = 'next-primary' }: NextFooterProps) => {
+export const NextFooter = ({ bg }: NextFooterProps) => {
   return (
     <footer>
       <Box bg={bg} zIndex={'docked'}>
@@ -52,11 +50,7 @@ export const NextFooter = ({ bg = 'next-primary' }: NextFooterProps) => {
                     h={16}
                   />
                 </Link>
-                <Link
-                  href={layout.socialNetwork}
-                  target={'_blank'}
-                  aria-label="Nosso whatsapp"
-                >
+                <Link href={'#'} target={'_blank'} aria-label="Nosso whatsapp">
                   <Icon
                     color="white"
                     _hover={{ color: 'next-secondary' }}
@@ -112,7 +106,7 @@ export const NextFooter = ({ bg = 'next-primary' }: NextFooterProps) => {
                 <Link
                   href={'https://www.linkedin.com/company/nextimetec/'}
                   target={'_blank'}
-                  aria-label="Acesse nosso linkedin"
+                  aria-label="Acesse nosso LinkedIn"
                 >
                   <Icon
                     color="white"

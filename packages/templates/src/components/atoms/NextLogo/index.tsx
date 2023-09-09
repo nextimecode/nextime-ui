@@ -1,6 +1,6 @@
 type Props = {
   color?: string
-  colorPrimary?: string
+  colorPrimary: string
 }
 
 export function NextLogo({ colorPrimary, color = '#17171B' }: Props) {

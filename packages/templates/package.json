@@ -37,13 +37,15 @@
     "@chakra-ui/theme-tools": "^2.1.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@phosphor-icons/react": "^2.0.10",
     "framer-motion": "^10.16.4",
     "next": "^13.4.19",
-    "next-seo": "^6.1.0"
+    "next-seo": "^6.1.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
-    "@nextime-ui/eslint-config": "workspace:*",
     "@nextime-ui/react": "workspace:*",
+    "@nextime-ui/eslint-config": "workspace:*",
     "@nextime-ui/tokens": "workspace:*",
     "@nextime-ui/ts-config": "workspace:*",
     "@types/react": "^18.2.21",

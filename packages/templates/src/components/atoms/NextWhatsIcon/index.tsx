@@ -4,7 +4,7 @@ export interface Props {
   color?: string
 }
 
-export const NextWhatsIcon = ({ color = 'next-green.400' }: Props) => {
+export const NextWhatsIcon = ({ color }: Props) => {
   return (
     <Icon
       aria-label="Next Whats Icon"
