@@ -37,7 +37,9 @@
     "@chakra-ui/theme-tools": "^2.1.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "framer-motion": "^10.16.4"
+    "framer-motion": "^10.16.4",
+    "next": "^13.4.19",
+    "next-seo": "^6.1.0"
   },
   "devDependencies": {
     "@nextime-ui/eslint-config": "workspace:*",

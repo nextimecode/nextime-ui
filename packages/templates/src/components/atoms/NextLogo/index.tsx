@@ -1,14 +1,9 @@
-import { colors } from '../../../theme/colors'
-
 type Props = {
   color?: string
   colorPrimary?: string
 }
 
-export function NextLogo({
-  colorPrimary = colors['next-primary'],
-  color = '#17171B'
-}: Props) {
+export function NextLogo({ colorPrimary, color = '#17171B' }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
