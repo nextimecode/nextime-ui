@@ -23,8 +23,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 
-import { Keyhole } from '@phosphor-icons/react'
-
 import { NextLogo } from '../../atoms/NextLogo'
 
 export interface NavItem {
@@ -146,15 +144,13 @@ const DesktopNav = ({ navItems = NAV_ITEMS }: Props) => {
   )
 }
 
-const MobileNavItem = ({ label, children, href }: NavItem) => {
+const MobileNavItem = ({ label, children }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
-        as={Link}
-        href={href ?? '#'}
         justify={'space-between'}
         align={'flex-start'}
         _hover={{
@@ -265,17 +261,16 @@ export const NextHeader = ({
           <Flex display={{ base: 'flex', md: 'none' }} me={2}>
             <IconButton
               onClick={onToggle}
-              icon={
-                isOpen ? (
-                  <CloseIcon w={3} h={3} />
-                ) : (
-                  <HamburgerIcon w={5} h={5} />
-                )
-              }
               variant={'ghost'}
               aria-label={'Toggle Navigation'}
               color={iconColor}
-            />
+            >
+              {isOpen ? (
+                <CloseIcon w={3} h={3} />
+              ) : (
+                <HamburgerIcon w={5} h={5} />
+              )}
+            </IconButton>
           </Flex>
           <HStack
             flex={{ base: 1 }}
@@ -296,7 +291,6 @@ export const NextHeader = ({
               aria-label="Fazer login na plataforma"
               onClick={() => handleSubmit()}
             >
-              <Keyhole size={24} />
               <Text display={['none', 'block']} ms={1}>
                 ENTRAR
               </Text>

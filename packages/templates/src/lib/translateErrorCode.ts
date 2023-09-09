@@ -10,7 +10,7 @@ export function translateErrorCode(errorMessage: string) {
     'Firebase: Error (auth/user-disabled).':
       'O usuário correspondente à credencial fornecida foi desativado.',
     'Firebase: Error (auth/user-not-found).':
-      'O usuário não correponde à nenhuma credencial.',
+      'O usuário não corresponde à nenhuma credencial.',
     'Firebase: Error (auth/weak-password).': 'A senha é muito fraca.',
     'Firebase: Error (auth/email-already-in-use).':
       'Já existi uma conta com o endereço de email fornecido.',
@@ -155,8 +155,8 @@ export function translateErrorCode(errorMessage: string) {
       'Uma ou mais propriedades personalizadas fornecidas usaram palavras reservadas.',
     'Firebase: Error (auth/session-cookie-revoked).':
       'O COOKIE da sessão perdeu a validade.',
-    'Firebase: Error (auth/uid-alread-exists).':
-      'O indentificador fornecido já está em uso.',
+    'Firebase: Error (auth/uid-already-exists).':
+      'O identificador fornecido já está em uso.',
     'Firebase: Error (auth/email-already-exists).':
       'O e-mail fornecido já está em uso.',
     'Firebase: Error (auth/phone-number-already-exists).':
@@ -166,8 +166,8 @@ export function translateErrorCode(errorMessage: string) {
     'Firebase: Error (auth/insufficient-permission).':
       'A credencial utilizada não tem permissão para acessar o recurso solicitado.',
     'Firebase: Error (auth/internal-error).':
-      'O servidor de autenticação encontrou um erro inesperado ao tentar processar a solicitação.',
-  } as any
+      'O servidor de autenticação encontrou um erro inesperado ao tentar processar a solicitação.'
+  } as Record<string, string>
   if (errors[errorMessage]) {
     return errors[errorMessage]
   } else {

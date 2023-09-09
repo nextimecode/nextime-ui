@@ -31,8 +31,8 @@ module.exports = {
         groups: [
           "/^react/",
           ["/^next/", "/@next/"],
-          "@nextime-ui/react",
-          "@nextime-ui/templates",
+          "/@nextime-ui/react/",
+          "/@nextime-ui/templates/",
           "/@chakra-ui/",
           "/components/",
           "module",

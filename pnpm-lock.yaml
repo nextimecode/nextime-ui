@@ -190,12 +190,6 @@ importers:
       '@emotion/styled':
         specifier: ^11.11.0
         version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.21)(react@18.2.0)
-      '@nextime-ui/react':
-        specifier: workspace:*
-        version: link:../react
-      '@phosphor-icons/react':
-        specifier: ^2.0.10
-        version: 2.0.10(react-dom@18.2.0)(react@18.2.0)
       framer-motion:
         specifier: ^10.16.4
         version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
@@ -212,6 +206,9 @@ importers:
       '@nextime-ui/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@nextime-ui/react':
+        specifier: workspace:*
+        version: link:../react
       '@nextime-ui/tokens':
         specifier: workspace:*
         version: link:../tokens
