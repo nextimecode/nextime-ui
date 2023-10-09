@@ -1,9 +1,8 @@
 import { Box, BoxProps } from '@nextime-ui/react'
 
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, Story } from '@storybook/react'
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-export default {
+const meta: Meta<BoxProps> = {
   title: 'LAYOUT/Box',
   component: Box,
   tags: ['autodocs'],
@@ -11,8 +10,11 @@ export default {
     children: 'This is the Box'
   },
   argTypes: {}
-} as Meta<BoxProps>
-
-export const Usage: StoryObj<BoxProps> = {
-  args: {}
 }
+
+const Usage: Story<BoxProps> = args => <Box {...args} />
+
+Usage.args = {}
+
+export default meta
+export { Usage }

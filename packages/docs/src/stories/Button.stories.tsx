@@ -2,8 +2,7 @@ import { Button, ButtonProps } from '@nextime-ui/react'
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-export default {
+const meta: Meta<ButtonProps> = {
   title: 'FORMS/Button',
   component: Button,
   tags: ['autodocs'],
@@ -18,31 +17,33 @@ export default {
       }
     }
   }
-} as Meta<ButtonProps>
+}
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Usage = {
+const Usage: StoryObj<ButtonProps> = {
   args: {
     colorScheme: 'blue',
     children: 'Button'
   }
 }
 
-export const Large = {
+const Large: StoryObj<ButtonProps> = {
   args: {
     size: 'large'
   }
 }
 
-export const Small = {
+const Small: StoryObj<ButtonProps> = {
   args: {
     size: 'small'
   }
 }
 
-export const Disabled: StoryObj<ButtonProps> = {
+const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
     children: 'Disabled'
   }
 }
+
+export default meta
+export { Usage, Large, Small, Disabled }

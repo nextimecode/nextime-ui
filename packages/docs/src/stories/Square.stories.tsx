@@ -2,8 +2,7 @@ import { Square, SquareProps } from '@nextime-ui/react'
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-export default {
+const meta: Meta<SquareProps> = {
   title: 'LAYOUT/Square',
   component: Square,
   tags: ['autodocs'],
@@ -11,12 +10,15 @@ export default {
     children: 'S'
   },
   argTypes: {}
-} as Meta<SquareProps>
+}
 
-export const Usage: StoryObj<SquareProps> = {
+const Usage: StoryObj<SquareProps> = {
   args: {
     size: '60px',
     bg: 'purple.700',
     color: 'white'
   }
 }
+
+export default meta
+export { Usage }

@@ -1,5 +1,11 @@
 # @nextime-ui/tokens
 
+## 2.5.3
+
+### Patch Changes
+
+- Add templates
+
 ## 2.5.2
 
 ### Patch Changes

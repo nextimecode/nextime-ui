@@ -33,6 +33,11 @@
       "outputs": [],
       "dependsOn": []
     },
+    "audit": {
+      "cache": true,
+      "outputs": [],
+      "dependsOn": []
+    },
     "reset:all": {
       "cache": false,
       "dependsOn": [
