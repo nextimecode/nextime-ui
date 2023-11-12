@@ -386,3 +386,9 @@ export { useColorMode } from '@chakra-ui/react'
 export { extendTheme } from '@chakra-ui/react'
 
 export { useToast, ListIcon } from '@chakra-ui/react'
+
+export { ChakraProvider } from '@chakra-ui/react'
+
+export type { ThemeComponents } from '@chakra-ui/react'
+
+export type { ThemeConfig } from '@chakra-ui/react'
