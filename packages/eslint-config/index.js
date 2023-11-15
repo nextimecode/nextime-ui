@@ -32,7 +32,6 @@ module.exports = {
           "/^react/",
           ["/^next/", "/@next/"],
           "/@nextime-ui/react/",
-          "/@nextime-ui/templates/",
           "/@chakra-ui/",
           "/components/",
           "module",
