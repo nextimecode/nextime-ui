@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/docs",
-  "version": "2.2.0",
+  "version": "2.6.0",
   "description": "",
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",
@@ -15,30 +15,30 @@
     "update": "pnpm update --latest"
   },
   "dependencies": {
-    "@nextime-ui/react": "workspace:*"
+    "@nextime-ui/react": "2.6.0"
   },
   "devDependencies": {
-    "@chakra-ui/storybook-addon": "^5.0.1",
-    "@nextime-ui/eslint-config": "workspace:*",
-    "@nextime-ui/react": "workspace:*",
-    "@nextime-ui/tokens": "workspace:*",
-    "@nextime-ui/ts-config": "workspace:*",
-    "@storybook/addon-essentials": "^7.4.0",
-    "@storybook/addon-interactions": "^7.4.0",
-    "@storybook/addon-links": "^7.4.0",
-    "@storybook/blocks": "^7.4.0",
-    "@storybook/manager-api": "^7.4.0",
-    "@storybook/react": "^7.4.0",
-    "@storybook/react-vite": "^7.4.0",
-    "@storybook/testing-library": "^0.2.0",
-    "@storybook/theming": "^7.4.0",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "@vitejs/plugin-react": "^4.0.4",
+    "@chakra-ui/storybook-addon": "^5.1.0",
+    "@nextime-ui/eslint-config": "2.6.0",
+    "@nextime-ui/react": "2.6.0",
+    "@nextime-ui/tokens": "2.6.0",
+    "@nextime-ui/ts-config": "2.6.0",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/manager-api": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
+    "@storybook/theming": "^7.5.3",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@vitejs/plugin-react": "^4.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.4.0",
-    "vite": "^4.4.9"
+    "storybook": "^7.5.3",
+    "vite": "^4.5.0"
   }
 }

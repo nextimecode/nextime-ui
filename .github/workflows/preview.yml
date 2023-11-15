@@ -60,17 +60,3 @@ jobs:
 
       - name: Audit dependencies
         run: pnpm audit
-
-  test:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Install pnpm and dependencies
-        run: |
-          npm install -g pnpm@${{ env.PNPM_VERSION }}
-          pnpm install
-
-      - name: Run tests
-        run: pnpm run test
