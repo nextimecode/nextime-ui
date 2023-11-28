@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 2.6.1
+
+### Patch Changes
+
+- Update version target in typescript es6
+
 ## 2.6.0
 
 ### Minor Changes
