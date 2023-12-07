@@ -34,17 +34,17 @@
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@swc/core": "^1.3.99",
+    "@swc/core": "^1.3.100",
     "@types/prop-types": "^15.7.11",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "depcheck": "^1.4.7",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
     "husky": "^8.0.3",
-    "semantic-release": "^22.0.8",
-    "turbo": "^1.10.16"
+    "semantic-release": "^22.0.10",
+    "turbo": "^1.11.0"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0"
