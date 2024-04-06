@@ -1,5 +1,11 @@
 # @nextime-ui/icons
 
+## 2.6.2
+
+### Patch Changes
+
+- update libs
+
 ## 2.6.1
 
 ### Patch Changes
