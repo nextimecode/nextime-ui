@@ -58,20 +58,20 @@ importers:
   packages/docs:
     dependencies:
       '@nextime-ui/react':
-        specifier: 2.6.1
+        specifier: 2.6.2
         version: link:../react
     devDependencies:
       '@chakra-ui/storybook-addon':
         specifier: ^5.1.0
         version: 5.1.0(@chakra-ui/react@2.8.2)(@storybook/components@8.0.6)(@storybook/manager-api@7.5.3)(@storybook/preview-api@8.0.6)(@storybook/types@8.0.6)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/eslint-config':
-        specifier: 2.6.1
+        specifier: 2.6.2
         version: link:../eslint-config
       '@nextime-ui/tokens':
-        specifier: 2.6.1
+        specifier: 2.6.2
         version: link:../tokens
       '@nextime-ui/ts-config':
-        specifier: 2.6.1
+        specifier: 2.6.2
         version: link:../ts-config
       '@storybook/addon-essentials':
         specifier: ^7.5.3
