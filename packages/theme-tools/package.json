@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/theme-tools",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "description": "NeXTIME UI é uma biblioteca de componentes para React, fundamentada no Chakra-UI. Ela faz a  inclusão do recurso 'use client' em seus componentes, uma estratégia eficaz para solucionar problemas existentes no Next.js versão 13.",
   "private": false,
   "keywords": [
@@ -38,16 +38,16 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@phosphor-icons/react": "^2.1.4",
-    "framer-motion": "^11.0.25"
+    "framer-motion": "^11.0.28"
   },
   "devDependencies": {
     "@nextime-ui/eslint-config": "workspace:*",
     "@nextime-ui/tokens": "workspace:*",
     "@nextime-ui/ts-config": "workspace:*",
-    "@types/react": "^18.2.74",
+    "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
     "react": "^18.2.0",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }

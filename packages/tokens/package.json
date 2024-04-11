@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/tokens",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "description": "",
   "private": false,
   "keywords": [],
@@ -21,6 +21,6 @@
     "@nextime-ui/eslint-config": "workspace:*",
     "@nextime-ui/ts-config": "workspace:*",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }
