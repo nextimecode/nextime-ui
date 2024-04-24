@@ -45,6 +45,7 @@ runs:
 
     - name: Install dependencies
       run: pnpm install
+      shell: bash
 
     - name: Save node_modules cache
       uses: actions/cache@v3
