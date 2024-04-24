@@ -1,5 +1,11 @@
 # @nextime-ui/tokens
 
+## 2.7.0
+
+### Minor Changes
+
+- update eslint
+
 ## 2.6.2
 
 ### Patch Changes
