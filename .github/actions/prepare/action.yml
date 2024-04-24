@@ -44,8 +44,7 @@ runs:
           ${{ runner.os }}-pnpm-store-
 
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
-      shell: bash
+      run: pnpm install
 
     - name: Save node_modules cache
       uses: actions/cache@v3
