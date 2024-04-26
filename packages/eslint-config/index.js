@@ -83,7 +83,6 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'spaced-comment': ['error', 'always'],
     'template-tag-spacing': 'error',
-    'prettier/prettier': 'error',
     'unicorn/prevent-abbreviations': [0, { ignore: ['/.*/ig'] }],
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',

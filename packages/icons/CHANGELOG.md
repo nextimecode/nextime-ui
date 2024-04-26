@@ -1,5 +1,11 @@
 # @nextime-ui/icons
 
+## 2.7.1
+
+### Patch Changes
+
+- fix
+
 ## 2.7.0
 
 ### Minor Changes

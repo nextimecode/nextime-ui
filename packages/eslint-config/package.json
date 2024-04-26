@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/eslint-config",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "description": "ESLint configuration used by NeXTIME.",
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",
