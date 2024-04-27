@@ -1,5 +1,11 @@
 # @nextime-ui/theme-tools
 
+## 2.7.2
+
+### Patch Changes
+
+- update eslint
+
 ## 2.7.1
 
 ### Patch Changes

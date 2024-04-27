@@ -20,7 +20,7 @@ export const LoggedIn = {
   play: async ({ canvasElement }: PlayParams) => {
     const canvas = within(canvasElement)
     const loginButton = await canvas.getByRole('button', {
-      name: /Log in/i
+      name: /log in/i
     })
     await userEvent.click(loginButton)
   }
