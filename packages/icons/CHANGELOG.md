@@ -1,5 +1,11 @@
 # @nextime-ui/icons
 
+## 2.7.2
+
+### Patch Changes
+
+- update eslint
+
 ## 2.7.1
 
 ### Patch Changes

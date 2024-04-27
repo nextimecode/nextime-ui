@@ -19,6 +19,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
+    'react',
     'jsx-a11y',
     '@typescript-eslint',
     "eslint-plugin-import-helpers",
@@ -73,6 +74,7 @@ module.exports = {
         img: ['Image'],
       },
     ],
+    'react/no-unknown-property': 'error',
     'jsx-a11y/aria-props': 'warn',
     'jsx-a11y/aria-proptypes': 'warn',
     'jsx-a11y/aria-unsupported-elements': 'warn',
@@ -92,6 +94,7 @@ module.exports = {
     'unicorn/prefer-top-level-await': 'off',
     'unicorn/text-encoding-identifier-case': 'off',
     'unicorn/filename-case': 'off',
+    'unicorn/prefer-module': 'off',
     'sonarjs/no-duplicate-string': 'off'
   },
   settings: {

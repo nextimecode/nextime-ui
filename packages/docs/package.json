@@ -15,14 +15,14 @@
     "update": "pnpm update --latest"
   },
   "dependencies": {
-    "@nextime-ui/react": "2.6.2"
+    "@nextime-ui/react": "2.7.1"
   },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.1.0",
-    "@nextime-ui/eslint-config": "2.6.2",
-    "@nextime-ui/react": "2.6.2",
-    "@nextime-ui/tokens": "2.6.2",
-    "@nextime-ui/ts-config": "2.6.2",
+    "@nextime-ui/eslint-config": "2.7.1",
+    "@nextime-ui/react": "2.7.1",
+    "@nextime-ui/tokens": "2.7.1",
+    "@nextime-ui/ts-config": "2.7.1",
     "@storybook/addon-essentials": "^8.0.9",
     "@storybook/addon-interactions": "^8.0.9",
     "@storybook/addon-links": "^8.0.9",
@@ -32,12 +32,12 @@
     "@storybook/react-vite": "^8.0.9",
     "@storybook/testing-library": "^0.2.2",
     "@storybook/theming": "^8.0.9",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "storybook": "^8.0.9",
     "vite": "^5.2.10"
   }
