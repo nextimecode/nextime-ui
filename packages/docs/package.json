@@ -6,6 +6,7 @@
   "author": "Pedro Duarte - NeXTIME",
   "license": "MIT",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "storybook build",
     "clean": "rm -rf .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml storybook-static",

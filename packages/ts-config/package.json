@@ -1,5 +1,6 @@
 {
   "name": "@nextime-ui/ts-config",
+  "type": "module",
   "version": "2.7.2",
   "private": false,
   "keywords": [],

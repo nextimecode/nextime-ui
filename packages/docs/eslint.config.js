@@ -6,6 +6,7 @@ import unicornPlugin from 'eslint-plugin-unicorn';
 import importHelpersPlugin from 'eslint-plugin-import-helpers';
 import perfectionistPlugin from 'eslint-plugin-perfectionist';
 import tsParser from '@typescript-eslint/parser';
+import globals from 'globals';
 
 export default [{
   files: ['**/*.{js,jsx,ts,tsx}'],
@@ -17,6 +18,10 @@ export default [{
       },
       ecmaVersion: 'latest',
       sourceType: 'module',
+    },
+    globals: {
+      ...globals.browser,
+      ...globals.es6,
     },
   },
   plugins: {

@@ -1,6 +1,4 @@
 {
   "extends": "@nextime-ui/ts-config/react.json",
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

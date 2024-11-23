@@ -4,7 +4,8 @@
     "allowJs": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "incremental": true
+    "incremental": true,
+    "lib": ["dom", "esnext"]
   },
   "plugins": [
     {
