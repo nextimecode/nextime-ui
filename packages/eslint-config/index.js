@@ -95,7 +95,8 @@ module.exports = {
     'unicorn/text-encoding-identifier-case': 'off',
     'unicorn/filename-case': 'off',
     'unicorn/prefer-module': 'off',
-    'sonarjs/no-duplicate-string': 'off'
+    'sonarjs/no-duplicate-string': 'off',
+    'unicorn/expiring-todo-comments': 'off'
   },
   settings: {
     react: {
