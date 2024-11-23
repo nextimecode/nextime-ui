@@ -19,7 +19,6 @@
     "@nextime-ui/react": "workspace:*"
   },
   "devDependencies": {
-    "@chakra-ui/storybook-addon": "^5.2.5",
     "@nextime-ui/eslint-config": "workspace:*",
     "@nextime-ui/react": "workspace:*",
     "@nextime-ui/tokens": "workspace:*",
