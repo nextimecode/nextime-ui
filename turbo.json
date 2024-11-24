@@ -1,17 +1,11 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": [
-    "**/.env.*local",
-    "tsconfig.json"
-  ],
-  "pipeline": {
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local", "tsconfig.json"],
+  "tasks": {
     "build": {
       "cache": true,
       "dependsOn": [],
-      "outputs": [
-        "dist/**",
-        "storybook-static/**"
-      ]
+      "outputs": ["dist/**", "storybook-static/**"]
     },
     "clean": {
       "cache": false,
@@ -40,30 +34,22 @@
     },
     "reset:all": {
       "cache": false,
-      "dependsOn": [
-        "clean"
-      ],
+      "dependsOn": ["clean"],
       "outputs": []
     },
     "semantic-release": {
       "cache": false,
-      "dependsOn": [
-        "build"
-      ],
-      "outputMode": "new-only"
+      "dependsOn": ["build"],
+      "outputLogs": "new-only"
     },
     "start": {
       "cache": true,
-      "dependsOn": [
-        "build"
-      ],
+      "dependsOn": ["build"],
       "outputs": []
     },
     "typecheck": {
       "cache": true,
-      "outputs": [
-        "tsconfig.tsbuildinfo"
-      ]
+      "outputs": ["tsconfig.tsbuildinfo"]
     },
     "update": {
       "cache": true,

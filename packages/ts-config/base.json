@@ -5,6 +5,7 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": true,
     "inlineSources": false,
     "isolatedModules": true,
     "moduleResolution": "node",
@@ -14,8 +15,5 @@
     "skipLibCheck": true,
     "strict": true
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "exclude": ["node_modules", "dist"]
 }
