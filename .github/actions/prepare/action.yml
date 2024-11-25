@@ -14,6 +14,7 @@ runs:
         pnpm_version=$(jq -r '.packageManager' package.json | cut -d'@' -f2)
         echo "NODE_VERSION=$node_version" >> $GITHUB_ENV
         echo "PNPM_VERSION=$pnpm_version" >> $GITHUB_ENV
+      shell: bash
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -33,9 +34,9 @@ runs:
       shell: bash
 
     - id: pnpm-cache
-      shell: bash
       run: |
         echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_ENV
+      shell: bash
 
     - name: Setup pnpm cache
       uses: actions/cache@v4

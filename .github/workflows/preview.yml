@@ -19,12 +19,6 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        uses: ./.github/actions/prepare
-
       - name: Run lint
         run: pnpm run lint
 
@@ -32,12 +26,6 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        uses: ./.github/actions/prepare
-
       - name: Run typecheck
         run: pnpm run typecheck
 
@@ -45,11 +33,5 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        uses: ./.github/actions/prepare
-
       - name: Audit dependencies
         run: pnpm audit
