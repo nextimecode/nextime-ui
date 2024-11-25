@@ -29,12 +29,6 @@ jobs:
         with:
           node-version: ${{ steps.extract-versions.outputs.node_version }}
 
-      - name: Install pnpm
-        run: npm install -g pnpm@${{ steps.extract-versions.outputs.pnpm_version }}
-
-      - name: Install dependencies
-        run: pnpm install
-
   lint:
     needs: setup
     runs-on: ubuntu-latest
@@ -45,6 +39,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ needs.setup.outputs.node_version }}
+
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ needs.setup.outputs.pnpm_version }}
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Run lint
         run: pnpm run lint
@@ -60,6 +60,12 @@ jobs:
         with:
           node-version: ${{ needs.setup.outputs.node_version }}
 
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ needs.setup.outputs.pnpm_version }}
+
+      - name: Install dependencies
+        run: pnpm install
+
       - name: Run typecheck
         run: pnpm run typecheck
 
@@ -73,6 +79,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ needs.setup.outputs.node_version }}
+
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ needs.setup.outputs.pnpm_version }}
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Audit dependencies
         run: pnpm audit
