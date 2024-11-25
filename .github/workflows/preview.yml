@@ -17,6 +17,12 @@ jobs:
       - name: Verify pnpm installation
         run: pnpm --version
 
+      - name: Verify scripts availability
+        run: |
+          pnpm run lint --help
+          pnpm run typecheck --help
+          pnpm audit --help
+
   lint:
     needs: setup
     runs-on: ubuntu-latest
