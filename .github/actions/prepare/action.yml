@@ -4,7 +4,7 @@ runs:
   using: 'composite'
   steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Extract versions from package.json
       id: extract-versions
@@ -13,14 +13,15 @@ runs:
         pnpm_version=$(jq -r '.packageManager' package.json | cut -d'@' -f2)
         echo "NODE_VERSION=$node_version" >> $GITHUB_ENV
         echo "PNPM_VERSION=$pnpm_version" >> $GITHUB_ENV
+      shell: bash
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.NODE_VERSION }}
 
     - name: Restore node_modules cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: '**/node_modules'
         key: ${{ runner.os }}-node-modules-${{ hashFiles('pnpm-lock.yaml', '.npmrc', 'pnpm-workspace.yaml') }}
@@ -32,12 +33,12 @@ runs:
       shell: bash
 
     - id: pnpm-cache
-      shell: bash
       run: |
         echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_ENV
+      shell: bash
 
     - name: Setup pnpm cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ env.STORE_PATH }}
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -47,9 +48,3 @@ runs:
     - name: Install dependencies
       run: pnpm install
       shell: bash
-
-    - name: Save node_modules cache
-      uses: actions/cache@v3
-      with:
-        path: '**/node_modules'
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('pnpm-lock.yaml', '.npmrc', 'pnpm-workspace.yaml') }}
