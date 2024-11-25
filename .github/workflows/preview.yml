@@ -19,6 +19,9 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - name: Verify pnpm
+        run: pnpm --version
+
       - name: Run lint
         run: pnpm run lint
 
@@ -26,6 +29,9 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - name: Verify pnpm
+        run: pnpm --version
+
       - name: Run typecheck
         run: pnpm run typecheck
 
@@ -33,5 +39,8 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - name: Verify pnpm
+        run: pnpm --version
+
       - name: Audit dependencies
         run: pnpm audit
