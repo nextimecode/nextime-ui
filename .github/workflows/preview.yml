@@ -7,28 +7,38 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
+    outputs:
+      node_version: ${{ steps.extract-versions.outputs.node_version }}
+      pnpm_version: ${{ steps.extract-versions.outputs.pnpm_version }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        uses: ./.github/actions/prepare
-
-      - name: Verify pnpm installation
-        run: pnpm --version
-
-      - name: Verify scripts availability
+      - name: Extract versions from package.json
+        id: extract-versions
         run: |
-          pnpm run lint --help
-          pnpm run typecheck --help
-          pnpm audit --help
+          echo "node_version=$(jq -r '.engines.node' package.json)" >> $GITHUB_OUTPUT
+          echo "pnpm_version=$(jq -r '.packageManager' package.json | cut -d'@' -f2)" >> $GITHUB_OUTPUT
+        shell: bash
 
   lint:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Verify pnpm
-        run: pnpm --version
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ needs.setup.outputs.node_version }}
+
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ needs.setup.outputs.pnpm_version }}
+        shell: bash
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Run lint
         run: pnpm run lint
@@ -37,8 +47,20 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Verify pnpm
-        run: pnpm --version
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ needs.setup.outputs.node_version }}
+
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ needs.setup.outputs.pnpm_version }}
+        shell: bash
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Run typecheck
         run: pnpm run typecheck
@@ -47,8 +69,20 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Verify pnpm
-        run: pnpm --version
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ needs.setup.outputs.node_version }}
+
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ needs.setup.outputs.pnpm_version }}
+        shell: bash
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Audit dependencies
         run: pnpm audit
