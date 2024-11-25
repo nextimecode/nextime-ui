@@ -4,20 +4,36 @@ on:
   pull_request:
     branches: ['main']
 
-env:
-  PNPM_VERSION: 8
-
 jobs:
   setup:
     runs-on: ubuntu-latest
+    outputs:
+      node_version: ${{ steps.extract-versions.outputs.node_version }}
+      pnpm_version: ${{ steps.extract-versions.outputs.pnpm_version }}
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup pnpm and cache
-        uses: ./.github/actions/prepare
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Extract versions from package.json
+        id: extract-versions
+        run: |
+          node_version=$(jq -r '.engines.node' package.json)
+          pnpm_version=$(jq -r '.packageManager' package.json | cut -d'@' -f2)
+          echo "::set-output name=node_version::$node_version"
+          echo "::set-output name=pnpm_version::$pnpm_version"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 18
-          pnpm-version: ${{ env.PNPM_VERSION }}
+          node-version: ${{ steps.extract-versions.outputs.node_version }}
+
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ steps.extract-versions.outputs.pnpm_version }}
+
+      - name: Install dependencies
+        run: pnpm install
 
   lint:
     needs: setup
@@ -25,10 +41,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm and dependencies
-        run: |
-          npm install -g pnpm@${{ env.PNPM_VERSION }}
-          pnpm install
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ needs.setup.outputs.node_version }}
 
       - name: Run lint
         run: pnpm run lint
@@ -39,10 +55,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm and dependencies
-        run: |
-          npm install -g pnpm@${{ env.PNPM_VERSION }}
-          pnpm install
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ needs.setup.outputs.node_version }}
 
       - name: Run typecheck
         run: pnpm run typecheck
@@ -53,10 +69,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm and dependencies
-        run: |
-          npm install -g pnpm@${{ env.PNPM_VERSION }}
-          pnpm install
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ needs.setup.outputs.node_version }}
 
       - name: Audit dependencies
         run: pnpm audit
