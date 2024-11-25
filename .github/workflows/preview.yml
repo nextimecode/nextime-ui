@@ -21,8 +21,8 @@ jobs:
         run: |
           node_version=$(jq -r '.engines.node' package.json)
           pnpm_version=$(jq -r '.packageManager' package.json | cut -d'@' -f2)
-          echo "::set-output name=node_version::$node_version"
-          echo "::set-output name=pnpm_version::$pnpm_version"
+          echo "node_version=$node_version" >> $GITHUB_OUTPUT
+          echo "pnpm_version=$pnpm_version" >> $GITHUB_OUTPUT
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
