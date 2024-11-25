@@ -6,6 +6,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
+    "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo",
     "inlineSources": false,
     "isolatedModules": true,
     "moduleResolution": "node",
