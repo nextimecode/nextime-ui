@@ -1,4 +1,3 @@
-# release.yml
 name: release
 
 on:
