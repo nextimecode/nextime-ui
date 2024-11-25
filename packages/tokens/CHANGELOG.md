@@ -1,5 +1,11 @@
 # @nextime-ui/tokens
 
+## 3.0.0
+
+### Major Changes
+
+- update all libs and remove not important
+
 ## 2.8.0
 
 ### Minor Changes
