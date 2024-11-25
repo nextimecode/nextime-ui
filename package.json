@@ -22,7 +22,7 @@
     "lint": "turbo run lint --parallel",
     "audit": "pnpm audit",
     "outdated": "pnpm outdated",
-    "release": "turbo run build --filter=!docs && changeset publish",
+    "release": "turbo run build && changeset publish",
     "semantic-release": "semantic-release",
     "reset:all": "turbo run clean && pnpm i && turbo run build --parallel",
     "typecheck": "turbo run typecheck --parallel",

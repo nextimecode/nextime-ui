@@ -11,7 +11,7 @@ jobs:
       node_version: ${{ steps.extract-versions.outputs.node_version }}
       pnpm_version: ${{ steps.extract-versions.outputs.pnpm_version }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install jq
         run: sudo apt-get install -y jq
@@ -25,7 +25,7 @@ jobs:
           echo "::set-output name=pnpm_version::$pnpm_version"
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ steps.extract-versions.outputs.node_version }}
 
