@@ -1,3 +1,4 @@
+# action.yml
 name: 'Install'
 description: 'Install project dependencies'
 runs:

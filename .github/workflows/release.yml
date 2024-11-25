@@ -1,3 +1,4 @@
+# release.yml
 name: release
 
 on:
@@ -6,10 +7,10 @@ on:
       - main
 
 permissions:
-  contents: write # Permissões de escrita para publicação de releases no GitHub
-  issues: write # Permissão para comentar issues relacionadas
-  pull-requests: write # Permissão para comentar PRs relacionadas
-  id-token: write # Permissão para OIDC com npm
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -17,25 +18,21 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      # Faz o checkout do código
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Configura Node.js e pnpm (action composta)
       - name: Setup Node.js and pnpm
         uses: ./.github/actions/prepare
 
-      # Publica a versão no NPM usando changesets
       - name: Publish to NPM
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run release # Comando que dispara a publicação
+          publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # Cria a release no GitHub
       - name: Create GitHub Release
         if: steps.changesets.outputs.published == 'true'
         uses: actions/create-release@v1
