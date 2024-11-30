@@ -1,10 +1,10 @@
-import React from 'react'
+import { ButtonHTMLAttributes, ReactNode } from 'react'
 
 type ButtonProps = {
   type?: 'button' | 'submit' | 'reset'
   variant?: 'solid' | 'outline' | 'ghost' | 'soft' | 'white' | 'link'
-  children: React.ReactNode
-} & React.ButtonHTMLAttributes<HTMLButtonElement>
+  children: ReactNode
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
   type = 'button',
