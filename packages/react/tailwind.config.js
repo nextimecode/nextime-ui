@@ -7,7 +7,7 @@ import preline from 'preline/plugin'
 export default {
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
-    '../../node_modules/preline/dist/*.js'
+    './node_modules/preline/dist/*.js'
   ],
   darkMode: 'class',
   theme: {
