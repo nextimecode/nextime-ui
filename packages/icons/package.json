@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/icons",
-  "version": "3.1.9",
+  "version": "3.1.10",
   "description": "NeXTIME UI é uma biblioteca de componentes para React, fundamentada no Chakra-UI. Ela faz a  inclusão do recurso 'use client' em seus componentes, uma estratégia eficaz para solucionar problemas existentes no Next.js versão 13.",
   "private": false,
   "keywords": [
