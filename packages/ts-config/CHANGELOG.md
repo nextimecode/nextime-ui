@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 3.1.0
+
+### Minor Changes
+
+- all files
+
 ## 3.0.0
 
 ### Major Changes
