@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "build": "turbo run build --parallel",
-    "changeset": "changeset",
+    "changeset": "changeset && pnpm version-packages",
     "clean:all": "turbo run clean --parallel && pnpm store prune && rm -rf .next .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
     "dev": "turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
