@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/preline",
-  "version": "3.1.9",
+  "version": "3.1.10",
   "description": "NeXTIME UI é uma biblioteca de componentes para React, fundamentada no Preline UI. Ela faz a  inclusão do recurso 'use client' em seus componentes, uma estratégia eficaz para solucionar problemas existentes no Next.js versão 15.",
   "private": false,
   "keywords": [
@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react dropzone,datatables.net,datatables.net-dt && cp src/global.css dist/",
     "clean": "rm -rf .turbo dist node_modules pnpm-lock.yaml",
-    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix",
     "typecheck": "tsc --noEmit",
     "update": "pnpm update --latest"
@@ -50,5 +50,9 @@
     "react": "^18.3.1",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
-  }
+  },
+  "files": [
+    "dist",
+    "dist/global.css"
+  ]
 }
