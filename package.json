@@ -32,7 +32,8 @@
     "commit": "cz",
     "update:all": "turbo run update --parallel && pnpm update --latest",
     "version-packages": "changeset version",
-    "depcheck": "depcheck"
+    "depcheck": "depcheck",
+    "bump-version": "pnpm changeset && pnpm version-packages"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.10",
