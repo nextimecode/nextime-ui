@@ -1,67 +1,102 @@
-# NeXTIME-UI
+# NeXTIME UI
 
-NeXTIME UI é uma biblioteca de componentes para React, construída para facilitar o desenvolvimento de interfaces de usuário.
+**NeXTIME UI** é um monorepo open source contendo bibliotecas e ferramentas para facilitar o desenvolvimento de interfaces de usuário modernas e consistentes em projetos React, com suporte completo a TypeScript.
+
+O monorepo utiliza [pnpm workspaces](https://pnpm.io/workspaces) para gerenciar múltiplos pacotes de forma integrada, permitindo fácil manutenção e escalabilidade.
 
 ![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
+## 📦 Estrutura do Monorepo
+
+O projeto está organizado em diversos pacotes principais, localizados na pasta `packages/`:
+
+- **[@nextime-ui/react](packages/react)**: Biblioteca principal de componentes React.
+- **[@nextime-ui/preline](packages/preline)**: Componentes React baseados no framework Preline UI.
+- **[@nextime-ui/icons](packages/icons)**: Conjunto de ícones reutilizáveis para React.
+- **[@nextime-ui/tokens](packages/tokens)**: Tokens de design para cores, tamanhos, espaçamentos e mais.
+- **[@nextime-ui/ts-config](packages/ts-config)**: Configurações compartilhadas para projetos TypeScript.
+- **[@nextime-ui/eslint-config](packages/eslint-config)**: Configuração padrão para ESLint.
+- **`docs`**: Projeto para a documentação interativa utilizando Storybook.
+
+Cada pacote possui seu próprio README com instruções específicas.
+
 ## 💻 Pré-requisitos
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Certifique-se de ter instalado:
 
-- Você instalou a versão mais recente de `pnpm`
-- Você instalou a versão mais recente do `Node.js`
+- [pnpm](https://pnpm.io/) (versão mais recente)
+- [Node.js](https://nodejs.org/) (versão compatível com o projeto)
 
-## 🛠️ Desenvolvimento e Atualização de Versão
+## 🛠️ Configuração do Ambiente
 
-Ao fazer alterações no código dos pacotes do projeto, você precisa seguir alguns passos para garantir que as versões dos pacotes estejam atualizadas. Aqui estão os passos detalhados:
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/nextimecode/nextime-ui.git
+   ```
 
-1. **Fazer Alterações no Código**: Faça as alterações necessárias nos pacotes do projeto.
+2. **Acesse o diretório do projeto**:
+   ```bash
+   cd nextime-ui
+   ```
 
-2. **Gerar Changeset**: Execute o comando `pnpm changeset`. Isso vai identificar as alterações feitas e criar um arquivo dentro do diretório `.changeset`.
+3. **Instale as dependências**:
+   ```bash
+   pnpm install
+   ```
 
+4. **Inicie o ambiente de desenvolvimento**:
+   Para rodar todos os pacotes em modo de desenvolvimento:
+   ```bash
+   pnpm dev
+   ```
+
+## 🛠️ Publicação e Atualizações
+
+1. **Realize as alterações necessárias nos pacotes**.  
+2. **Crie um changeset** para registrar as alterações:
    ```bash
    pnpm changeset
    ```
-
-   Após a execução do comando, verifique o conteúdo do diretório `.changeset`. Confirme se a versão proposta corresponde ao tipo de alterações que você fez.
-
-3. **Atualizar Versões dos Pacotes**: Execute o comando `pnpm version-packages`. Isso irá analisar os arquivos de changeset e atualizar as versões dos pacotes afetados de acordo.
-
+3. **Atualize as versões dos pacotes afetados**:
    ```bash
    pnpm version-packages
    ```
+4. **Publique os pacotes (opcional)**:
+   ```bash
+   pnpm publish
+   ```
 
-   Após a execução deste comando, as versões dos pacotes devem ser atualizadas para refletir as alterações feitas.
+## 📝 Exemplo de Uso
 
-Esses passos garantem que cada pacote tenha uma versão apropriada de acordo com as alterações feitas. Lembre-se de seguir esses passos cada vez que fizer alterações nos pacotes do projeto.
+Para usar o pacote principal de componentes React:
 
-## 📝 Usando NeXTIME UI
+1. Instale o pacote:
+   ```bash
+   pnpm add @nextime-ui/react
+   ```
 
-Você pode instalar a biblioteca NeXTIME UI no seu projeto executando o seguinte comando no diretório raiz do seu projeto:
+2. Importe e use os componentes no seu projeto:
+   ```tsx
+   import { Button } from '@nextime-ui/react';
 
-```bash
-pnpm add @nextime-ui/react
-```
+   function App() {
+     return <Button>Click me!</Button>;
+   }
+   ```
 
-Veja o exemplo de uso da NeXTIME UI:
-
-```jsx
-import { Button } from '@nextime-ui/react'
-
-function App() {
-  return <Button>Click me!</Button>
-}
-```
+Consulte os READMEs dos pacotes para mais exemplos e informações detalhadas.
 
 ## 📖 Documentação
 
-O projeto Docs cuida da documentação utilizando storybook e você pode acessar o site da documentação no link https://ui.nextime.com.br/
+Acesse a documentação interativa e exemplos completos no site oficial:
+🔗 **[Nextime UI Docs](https://ui.nextime.com.br)**
 
-## 📚 Contato
+## 🌟 Contribuição
 
-Se você tiver qualquer dúvida, sinta-se à vontade para nos contatar.
+Contribuições são bem-vindas! Consulte o [Guia de Contribuição](CONTRIBUTING.md) para saber como participar.
 
-Projeto: https://github.com/nextimecode/nextime-ui
+## 📬 Contato
 
-Autor: [Pedro Duarte](https://github.com/phdduarte) - NeXTIME
+- Repositório: [nextimecode/nextime-ui](https://github.com/nextimecode/nextime-ui)
+- Autor: [Pedro Duarte](https://github.com/phdduarte) - NeXTIME
