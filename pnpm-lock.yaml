@@ -75,7 +75,7 @@ importers:
 
   packages/docs:
     dependencies:
-      '@nextime-ui/react':
+      '@nextime-ui/preline':
         specifier: workspace:*
         version: link:../preline
     devDependencies:

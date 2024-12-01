@@ -4,14 +4,14 @@
 
 O monorepo utiliza [pnpm workspaces](https://pnpm.io/workspaces) para gerenciar múltiplos pacotes de forma integrada, permitindo fácil manutenção e escalabilidade.
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 ## 📦 Estrutura do Monorepo
 
 O projeto está organizado em diversos pacotes principais, localizados na pasta `packages/`:
 
-- **[@nextime-ui/react](packages/react)**: Biblioteca principal de componentes React.
+- **[@nextime-ui/preline](packages/react)**: Biblioteca principal de componentes React.
 - **[@nextime-ui/preline](packages/preline)**: Componentes React baseados no framework Preline UI.
 - **[@nextime-ui/icons](packages/icons)**: Conjunto de ícones reutilizáveis para React.
 - **[@nextime-ui/tokens](packages/tokens)**: Tokens de design para cores, tamanhos, espaçamentos e mais.
@@ -73,12 +73,12 @@ Para usar o pacote principal de componentes React:
 
 1. Instale o pacote:
    ```bash
-   pnpm add @nextime-ui/react
+   pnpm add @nextime-ui/preline
    ```
 
 2. Importe e use os componentes no seu projeto:
    ```tsx
-   import { Button } from '@nextime-ui/react';
+   import { Button } from '@nextime-ui/preline';
 
    function App() {
      return <Button>Click me!</Button>;

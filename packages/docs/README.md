@@ -2,7 +2,7 @@
 
 **@nextime-ui/docs** é o pacote responsável por hospedar e gerenciar a documentação do monorepo **NeXTIME UI**, utilizando o [Storybook](https://storybook.js.org/) para criar e exibir exemplos interativos dos componentes.
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 ## 📚 Sobre
@@ -74,7 +74,7 @@ Contribuições para a documentação são bem-vindas! Certifique-se de seguir o
 
 Este pacote depende de:
 
-- **[@nextime-ui/react]**: Componentes React documentados.
+- **[@nextime-ui/preline]**: Componentes React documentados.
 - **[@nextime-ui/tokens]**: Tokens de design utilizados para estilização.
 - **Storybook**: Ferramenta para criar e organizar a documentação interativa.
 

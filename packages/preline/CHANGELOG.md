@@ -1,4 +1,4 @@
-# @nextime-ui/react
+# @nextime-ui/preline
 
 ## 3.1.2
 

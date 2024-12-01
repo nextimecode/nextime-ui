@@ -2,7 +2,7 @@
 
 Nextime UI é uma biblioteca de componentes para React, baseada no Preline UI. Seu objetivo é transformar os elementos nativos do Preline em componentes React reutilizáveis, com suporte total ao TypeScript, oferecendo maior produtividade e consistência nos projetos.
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 ## 📝 Instalação

@@ -1,6 +1,6 @@
 {
   "name": "@nextime-ui/docs",
-  "version": "3.0.0",
+  "version": "3.1.2",
   "description": "",
   "keywords": [],
   "author": "Pedro Duarte - NeXTIME",
@@ -16,11 +16,11 @@
     "update": "pnpm update --latest"
   },
   "dependencies": {
-    "@nextime-ui/react": "workspace:*"
+    "@nextime-ui/preline": "workspace:*"
   },
   "devDependencies": {
     "@nextime-ui/eslint-config": "workspace:*",
-    "@nextime-ui/react": "workspace:*",
+    "@nextime-ui/preline": "workspace:*",
     "@nextime-ui/tokens": "workspace:*",
     "@nextime-ui/ts-config": "workspace:*",
     "@storybook/addon-essentials": "^8.4.6",
