@@ -61,10 +61,6 @@ Certifique-se de ter instalado:
    ```bash
    pnpm version-packages
    ```
-4. **Publique os pacotes (opcional)**:
-   ```bash
-   pnpm publish
-   ```
 
 ## 📝 Exemplo de Uso
 
