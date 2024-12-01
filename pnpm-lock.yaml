@@ -26,7 +26,7 @@ importers:
         version: 19.6.0
       '@nextime-ui/eslint-config':
         specifier: ^3.1.0
-        version: 3.1.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
+        version: 3.1.2(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       '@swc/core':
         specifier: ^1.9.3
         version: 1.9.3(@swc/helpers@0.2.14)
@@ -837,8 +837,8 @@ packages:
   '@next/eslint-plugin-next@15.0.3':
     resolution: {integrity: sha512-3Ln/nHq2V+v8uIaxCR6YfYo7ceRgZNXfTd3yW1ukTaFbO+/I8jNakrjYWODvG9BuR2v5kgVtH/C8r0i11quOgw==}
 
-  '@nextime-ui/eslint-config@3.1.0':
-    resolution: {integrity: sha512-epXVcraFRw39rD+n+qYZ9PaeN3RV4DnzjcP2IvL/16k7R9xRqwUxihXEADFxkb0CzwVmKTzcu6exndm1N2LXbA==}
+  '@nextime-ui/eslint-config@3.1.2':
+    resolution: {integrity: sha512-tQm0u6KivSpcJ4nVNnVVT8gL1WakrH48YTUOEyV97Mhm3bPB4L0mC/dqK48Mtfuigth5J2D0faPnQJ6PB1+sMA==}
     peerDependencies:
       eslint: ^9.16.0
       typescript: '>=5.7.2'
@@ -2738,8 +2738,8 @@ packages:
   has-property-descriptors@1.0.2:
     resolution: {integrity: sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==}
 
-  has-proto@1.0.3:
-    resolution: {integrity: sha512-SJ1amZAJUiZS+PhsVLf5tGydlaVB8EdFpaSO4gmiUKUOxk8qzn5AIy4ZeJUmh22znIdk/uMAUT2pl3FxzVUH+Q==}
+  has-proto@1.1.0:
+    resolution: {integrity: sha512-QLdzI9IIO1Jg7f9GT1gXpPpXArAn6cS31R1eEZqz08Gc+uQ8/XiqHWt17Fiw+2p6oTTIq5GXEpQkAlA88YRl/Q==}
     engines: {node: '>= 0.4'}
 
   has-symbols@1.0.3:
@@ -5355,7 +5355,7 @@ snapshots:
     dependencies:
       fast-glob: 3.3.1
 
-  '@nextime-ui/eslint-config@3.1.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)':
+  '@nextime-ui/eslint-config@3.1.2(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.16.0(@typescript-eslint/parser@8.16.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       '@typescript-eslint/parser': 8.16.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
@@ -6898,7 +6898,7 @@ snapshots:
       globalthis: 1.0.4
       gopd: 1.1.0
       has-property-descriptors: 1.0.2
-      has-proto: 1.0.3
+      has-proto: 1.1.0
       has-symbols: 1.0.3
       hasown: 2.0.2
       internal-slot: 1.0.7
@@ -6957,7 +6957,7 @@ snapshots:
       globalthis: 1.0.4
       gopd: 1.1.0
       has-property-descriptors: 1.0.2
-      has-proto: 1.0.3
+      has-proto: 1.1.0
       has-symbols: 1.0.3
       internal-slot: 1.0.7
       iterator.prototype: 1.1.3
@@ -7537,7 +7537,7 @@ snapshots:
     dependencies:
       es-errors: 1.3.0
       function-bind: 1.1.2
-      has-proto: 1.0.3
+      has-proto: 1.1.0
       has-symbols: 1.0.3
       hasown: 2.0.2
 
@@ -7679,7 +7679,9 @@ snapshots:
     dependencies:
       es-define-property: 1.0.0
 
-  has-proto@1.0.3: {}
+  has-proto@1.1.0:
+    dependencies:
+      call-bind: 1.0.7
 
   has-symbols@1.0.3: {}
 
@@ -9316,7 +9318,7 @@ snapshots:
       call-bind: 1.0.7
       for-each: 0.3.3
       gopd: 1.1.0
-      has-proto: 1.0.3
+      has-proto: 1.1.0
       is-typed-array: 1.1.13
 
   typed-array-byte-offset@1.0.3:
@@ -9325,7 +9327,7 @@ snapshots:
       call-bind: 1.0.7
       for-each: 0.3.3
       gopd: 1.1.0
-      has-proto: 1.0.3
+      has-proto: 1.1.0
       is-typed-array: 1.1.13
       reflect.getprototypeof: 1.0.7
 
