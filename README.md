@@ -1,25 +1,29 @@
 # NeXTIME UI
 
-**NeXTIME UI** é um monorepo contendo bibliotecas de componentes para React, projetadas para facilitar o desenvolvimento de interfaces de usuário modernas e consistentes.
+**NeXTIME UI** é um monorepo open source contendo bibliotecas e ferramentas para facilitar o desenvolvimento de interfaces de usuário modernas e consistentes em projetos React, com suporte completo a TypeScript.
 
-O monorepo utiliza [pnpm workspaces](https://pnpm.io/workspaces) para gerenciar múltiplos pacotes, permitindo que bibliotecas e ferramentas sejam desenvolvidas e mantidas de forma integrada.
+O monorepo utiliza [pnpm workspaces](https://pnpm.io/workspaces) para gerenciar múltiplos pacotes de forma integrada, permitindo fácil manutenção e escalabilidade.
 
 ![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 ## 📦 Estrutura do Monorepo
 
-O monorepo contém os seguintes pacotes principais:
+O projeto está organizado em diversos pacotes principais, localizados na pasta `packages/`:
 
 - **[@nextime-ui/react](packages/react)**: Biblioteca principal de componentes React.
-- **[@nextime-ui/preline](packages/preline)**: Componentes baseados no framework Preline UI.
-- **`docs`**: Projeto para a documentação utilizando Storybook.
+- **[@nextime-ui/preline](packages/preline)**: Componentes React baseados no framework Preline UI.
+- **[@nextime-ui/icons](packages/icons)**: Conjunto de ícones reutilizáveis para React.
+- **[@nextime-ui/tokens](packages/tokens)**: Tokens de design para cores, tamanhos, espaçamentos e mais.
+- **[@nextime-ui/ts-config](packages/ts-config)**: Configurações compartilhadas para projetos TypeScript.
+- **[@nextime-ui/eslint-config](packages/eslint-config)**: Configuração padrão para ESLint.
+- **`docs`**: Projeto para a documentação interativa utilizando Storybook.
 
-Cada pacote está localizado dentro da pasta `packages/` e possui seu próprio README com detalhes específicos.
+Cada pacote possui seu próprio README com instruções específicas.
 
 ## 💻 Pré-requisitos
 
-Antes de começar, certifique-se de ter instalado:
+Certifique-se de ter instalado:
 
 - [pnpm](https://pnpm.io/) (versão mais recente)
 - [Node.js](https://nodejs.org/) (versão compatível com o projeto)
@@ -47,58 +51,52 @@ Antes de começar, certifique-se de ter instalado:
    pnpm dev
    ```
 
-## 🛠️ Desenvolvimento e Atualização de Versão
+## 🛠️ Publicação e Atualizações
 
-Ao fazer alterações nos pacotes, siga estas etapas:
-
-1. **Fazer Alterações no Código**:
-   Modifique os pacotes conforme necessário.
-
-2. **Gerar Changeset**:
-   Crie um changeset para registrar suas alterações:
+1. **Realize as alterações necessárias nos pacotes**.  
+2. **Crie um changeset** para registrar as alterações:
    ```bash
    pnpm changeset
    ```
-
-3. **Atualizar Versões**:
-   Atualize as versões dos pacotes afetados:
+3. **Atualize as versões dos pacotes afetados**:
    ```bash
    pnpm version-packages
    ```
-
-4. **Publicar os Pacotes** (opcional):
+4. **Publique os pacotes (opcional)**:
    ```bash
    pnpm publish
    ```
 
-## 📝 Usando NeXTIME UI
+## 📝 Exemplo de Uso
 
-Exemplo básico com o pacote React:
+Para usar o pacote principal de componentes React:
 
-```bash
-pnpm add @nextime-ui/react
-```
+1. Instale o pacote:
+   ```bash
+   pnpm add @nextime-ui/react
+   ```
 
-```tsx
-import { Button } from '@nextime-ui/react';
+2. Importe e use os componentes no seu projeto:
+   ```tsx
+   import { Button } from '@nextime-ui/react';
 
-function App() {
-  return <Button>Click me!</Button>;
-}
-```
+   function App() {
+     return <Button>Click me!</Button>;
+   }
+   ```
 
-Consulte os pacotes individuais para mais exemplos e detalhes de uso.
+Consulte os READMEs dos pacotes para mais exemplos e informações detalhadas.
 
 ## 📖 Documentação
 
-Acesse a documentação completa no site oficial:  
+Acesse a documentação interativa e exemplos completos no site oficial:
 🔗 **[Nextime UI Docs](https://ui.nextime.com.br)**
 
 ## 🌟 Contribuição
 
-NeXTIME UI é um projeto **open source**, e sua contribuição é bem-vinda! Veja nosso [Guia de Contribuição](CONTRIBUTING.md) para mais informações.
+Contribuições são bem-vindas! Consulte o [Guia de Contribuição](CONTRIBUTING.md) para saber como participar.
 
-## 📚 Contato
+## 📬 Contato
 
 - Repositório: [nextimecode/nextime-ui](https://github.com/nextimecode/nextime-ui)
 - Autor: [Pedro Duarte](https://github.com/phdduarte) - NeXTIME
