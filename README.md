@@ -53,7 +53,7 @@ Certifique-se de ter instalado:
 
 ## 🛠️ Publicação e Atualizações
 
-1. **Realize as alterações necessárias nos pacotes**.  
+1. **Realize as alterações necessárias nos pacotes**.
 2. **Crie um changeset** para registrar as alterações:
    ```bash
    pnpm changeset
