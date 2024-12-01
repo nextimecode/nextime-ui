@@ -1,5 +1,13 @@
 # @nextime-ui/docs
 
+## 3.1.6
+
+### Patch Changes
+
+- fix release
+- Updated dependencies
+  - @nextime-ui/preline@3.1.6
+
 ## 3.1.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @nextime-ui/tokens
 
+## 3.1.6
+
+### Patch Changes
+
+- fix release
+
 ## 3.1.5
 
 ### Patch Changes
