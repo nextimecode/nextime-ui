@@ -16,7 +16,7 @@
   "scripts": {
     "build": "turbo run build --parallel",
     "changeset": "changeset",
-    "clean:all": "turbo run clean --parallel && pnpm store prune && rm -rf .next .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
+    "clean:all": "turbo run clean --parallel && pnpm store prune && rm -rf .next .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml && pnpm i && pnpm build",
     "dev": "turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint --parallel",

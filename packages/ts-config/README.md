@@ -1,6 +1,6 @@
 # @nextime-ui/ts-config
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 **@nextime-ui/ts-config** é um conjunto de configurações compartilhadas do TypeScript projetadas para garantir consistência e melhores práticas em projetos desenvolvidos no monorepo **NeXTIME UI**. Ele inclui diferentes configurações específicas para React, Next.js e uso geral.

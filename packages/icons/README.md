@@ -1,6 +1,6 @@
 # @nextime-ui/icons
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 **@nextime-ui/icons** é um pacote de ícones reutilizáveis para projetos React, projetado para ser integrado facilmente com o restante da biblioteca **NeXTIME UI**. Atualmente, ele inclui os ícones do [Phosphor Icons](https://phosphoricons.com/), mas tem planos de expansão para incluir outros conjuntos de ícones no futuro.
