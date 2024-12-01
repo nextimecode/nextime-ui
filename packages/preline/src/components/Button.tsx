@@ -1,15 +1,19 @@
+'use client'
+
 import { ButtonHTMLAttributes, ReactNode } from 'react'
 
-type ButtonProps = {
+export type ButtonProps = {
   type?: 'button' | 'submit' | 'reset'
   variant?: 'solid' | 'outline' | 'ghost' | 'soft' | 'white' | 'link'
   children: ReactNode
+  isLoading?: boolean
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
   type = 'button',
   variant = 'solid',
   children,
+  isLoading = false,
   ...props
 }: ButtonProps) => {
   const baseClasses =
@@ -26,13 +30,24 @@ export const Button = ({
     link: 'text-blue-600 hover:text-blue-800 focus:text-blue-800'
   }
 
+  const spinnerClasses =
+    'animate-spin inline-block size-4 border-[3px] border-current border-t-transparent rounded-full'
+
   return (
     <button
       type={type}
       className={`${baseClasses} ${variantClasses[variant!]}`}
+      disabled={isLoading}
       {...props}
     >
-      {children}
+      {isLoading && (
+        <span
+          className={spinnerClasses}
+          role="status"
+          aria-label="loading"
+        ></span>
+      )}
+      {isLoading ? 'Loading' : children}
     </button>
   )
 }
