@@ -1,5 +1,11 @@
 # @nextime-ui/eslint-config
 
+## 3.1.5
+
+### Patch Changes
+
+- fix realse worflows
+
 ## 3.1.4
 
 ### Patch Changes
