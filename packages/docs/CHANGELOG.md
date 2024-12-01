@@ -1,5 +1,13 @@
 # @nextime-ui/docs
 
+## 3.1.7
+
+### Patch Changes
+
+- add git hub token
+- Updated dependencies
+  - @nextime-ui/preline@3.1.7
+
 ## 3.1.6
 
 ### Patch Changes

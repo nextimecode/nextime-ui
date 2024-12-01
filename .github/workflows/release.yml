@@ -24,6 +24,7 @@ jobs:
         with:
           publish: pnpm run release
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
@@ -35,4 +36,5 @@ jobs:
           body: |
             🚀 Novo release publicado!
             - Verifique as alterações no changelog.
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,11 @@
 # @nextime-ui/ts-config
 
+## 3.1.7
+
+### Patch Changes
+
+- add git hub token
+
 ## 3.1.6
 
 ### Patch Changes
