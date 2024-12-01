@@ -1,5 +1,11 @@
 # @nextime-ui/tokens
 
+## 3.1.8
+
+### Patch Changes
+
+- githu token
+
 ## 3.1.7
 
 ### Patch Changes

@@ -36,5 +36,4 @@ jobs:
           body: |
             🚀 Novo release publicado!
             - Verifique as alterações no changelog.
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}

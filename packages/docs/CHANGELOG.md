@@ -1,5 +1,13 @@
 # @nextime-ui/docs
 
+## 3.1.8
+
+### Patch Changes
+
+- githu token
+- Updated dependencies
+  - @nextime-ui/preline@3.1.8
+
 ## 3.1.7
 
 ### Patch Changes
