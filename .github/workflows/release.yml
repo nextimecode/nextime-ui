@@ -6,16 +6,22 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js and pnpm
+      - name: Setup pnpm and cache
         uses: ./.github/actions/prepare
 
       - name: Publish to NPM
@@ -26,14 +32,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Create GitHub Release
-        if: steps.changesets.outputs.published == 'true'
-        uses: ncipollo/release-action@v1.8.7
-        with:
-          tag: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
-          body: |
-            🚀 Novo release publicado!
-            - Verifique as alterações no changelog.
-          token: ${{ secrets.GITHUB_TOKEN }}

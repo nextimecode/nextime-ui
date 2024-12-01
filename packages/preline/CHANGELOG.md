@@ -1,5 +1,11 @@
 # @nextime-ui/preline
 
+## 3.1.9
+
+### Patch Changes
+
+- fix relase yml
+
 ## 3.1.8
 
 ### Patch Changes
