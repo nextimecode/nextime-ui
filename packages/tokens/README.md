@@ -1,6 +1,6 @@
 # @nextime-ui/tokens
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 **@nextime-ui/tokens** é um pacote de design tokens que fornece valores reutilizáveis para cores, tamanhos de fonte, espaçamentos, raios de borda e outros estilos fundamentais. Ele foi projetado para ser usado em conjunto com os componentes da **NeXTIME UI**, garantindo consistência visual em todos os projetos.

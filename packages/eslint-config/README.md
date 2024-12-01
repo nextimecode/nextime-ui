@@ -2,7 +2,7 @@
 
 **@nextime-ui/eslint-config** é a configuração padrão do ESLint utilizada nos projetos do monorepo **NeXTIME UI**. Ela foi projetada para garantir consistência de estilo de código, boas práticas e acessibilidade, aproveitando integrações com Prettier, TypeScript e outras ferramentas populares.
 
-![version](https://img.shields.io/npm/v/@nextime-ui/react.svg)
+![version](https://img.shields.io/npm/v/@nextime-ui/preline.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 ## 📚 Sobre

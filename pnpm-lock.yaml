@@ -26,7 +26,7 @@ importers:
         version: 19.6.0
       '@nextime-ui/eslint-config':
         specifier: ^3.1.0
-        version: 3.1.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
+        version: 3.1.1(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       '@swc/core':
         specifier: ^1.9.3
         version: 1.9.3(@swc/helpers@0.2.14)
@@ -75,7 +75,7 @@ importers:
 
   packages/docs:
     dependencies:
-      '@nextime-ui/react':
+      '@nextime-ui/preline':
         specifier: workspace:*
         version: link:../preline
     devDependencies:
@@ -837,8 +837,8 @@ packages:
   '@next/eslint-plugin-next@15.0.3':
     resolution: {integrity: sha512-3Ln/nHq2V+v8uIaxCR6YfYo7ceRgZNXfTd3yW1ukTaFbO+/I8jNakrjYWODvG9BuR2v5kgVtH/C8r0i11quOgw==}
 
-  '@nextime-ui/eslint-config@3.1.0':
-    resolution: {integrity: sha512-epXVcraFRw39rD+n+qYZ9PaeN3RV4DnzjcP2IvL/16k7R9xRqwUxihXEADFxkb0CzwVmKTzcu6exndm1N2LXbA==}
+  '@nextime-ui/eslint-config@3.1.1':
+    resolution: {integrity: sha512-4XKLkG7A5/a09VPrwzKFIFPuxaMAcNJspO11bnmaDNfaZNyKOx6UwwBDxb4yjqdwJRLwkvNviB/d64D0B1XyRQ==}
     peerDependencies:
       eslint: ^9.16.0
       typescript: '>=5.7.2'
@@ -5355,7 +5355,7 @@ snapshots:
     dependencies:
       fast-glob: 3.3.1
 
-  '@nextime-ui/eslint-config@3.1.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)':
+  '@nextime-ui/eslint-config@3.1.1(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.16.0(@typescript-eslint/parser@8.16.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       '@typescript-eslint/parser': 8.16.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)

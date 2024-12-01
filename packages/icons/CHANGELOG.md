@@ -1,5 +1,11 @@
 # @nextime-ui/icons
 
+## 3.2.0
+
+### Minor Changes
+
+- update for the preline
+
 ## 3.1.1
 
 ### Patch Changes
